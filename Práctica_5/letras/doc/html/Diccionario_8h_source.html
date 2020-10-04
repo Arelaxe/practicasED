@@ -1,0 +1,84 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.13"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>PRÁCTICA FINAL: Fichero Fuente include/Diccionario.h</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">PRÁCTICA FINAL
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Generado por Doxygen 1.8.13 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'Buscar');
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+$(function() {
+  initMenu('',true,false,'search.php','Buscar');
+  $(document).ready(function() { init_search(); });
+});
+</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_d44c64559bbebec7f509842c48db8b23.html">include</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle">
+<div class="title">Diccionario.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="Diccionario_8h.html">Ir a la documentación de este archivo.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;</div><div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="preprocessor">#ifndef DICCIONARIO</span></div><div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="preprocessor">#define DICCIONARIO</span></div><div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;</div><div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="preprocessor">#include &lt;vector&gt;</span></div><div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="preprocessor">#include &lt;set&gt;</span></div><div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="preprocessor">#include &lt;list&gt;</span></div><div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="Conjunto__Letras_8h.html">Conjunto_Letras.h</a>&quot;</span></div><div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="preprocessor">#include &lt;string&gt;</span></div><div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;</div><div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="keyword">using namespace </span><a class="code" href="namespacestd.html">std</a>;</div><div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;</div><div class="line"><a name="l00022"></a><span class="lineno"><a class="line" href="classDiccionario.html">   22</a></span>&#160;<span class="keyword">class </span><a class="code" href="classDiccionario.html">Diccionario</a>{</div><div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;<span class="keyword">private</span>:</div><div class="line"><a name="l00034"></a><span class="lineno"><a class="line" href="classDiccionario.html#aae047bbcc9d6bc3c7b0b2c308d39048d">   34</a></span>&#160;    set&lt;string&gt; <a class="code" href="classDiccionario.html#aae047bbcc9d6bc3c7b0b2c308d39048d">datos</a>; </div><div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;<span class="keyword">public</span>:</div><div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;    <a class="code" href="classDiccionario.html">Diccionario</a>();</div><div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;    <span class="keywordtype">int</span> size() <span class="keyword">const</span>;</div><div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;    vector&lt;string&gt; PalabrasLongitud(<span class="keywordtype">int</span> longitud) <span class="keyword">const</span>;</div><div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;    <span class="keywordtype">bool</span> Esta(<span class="keywordtype">string</span> palabra) <span class="keyword">const</span>;</div><div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;    <span class="keywordtype">bool</span> PalabraValida(<span class="keyword">const</span> <span class="keywordtype">string</span> palabra, <span class="keyword">const</span> list&lt;char&gt; lista) <span class="keyword">const</span>;</div><div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;    list&lt;string&gt; FormaPalabras(<span class="keyword">const</span> list&lt;char&gt; lista) <span class="keyword">const</span>;</div><div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;    list&lt;string&gt; FormaPalabrasMaxPuntuacion(<span class="keyword">const</span> list&lt;char&gt; lista, <span class="keyword">const</span> <a class="code" href="classConjunto__Letras.html">Conjunto_Letras</a> c) <span class="keyword">const</span>;</div><div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;    list&lt;string&gt; FormaPalabrasMaxLongitud(<span class="keyword">const</span> list&lt;char&gt; lista) <span class="keyword">const</span>;</div><div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;</div><div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;    <span class="keyword">friend</span> istream &amp; operator&gt;&gt;(istream &amp; in, <a class="code" href="classDiccionario.html">Diccionario</a> &amp; d);</div><div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;    <span class="keyword">friend</span> ostream &amp; operator&lt;&lt;(ostream &amp; out, <span class="keyword">const</span> <a class="code" href="classDiccionario.html">Diccionario</a> &amp; d);</div><div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;</div><div class="line"><a name="l00108"></a><span class="lineno"><a class="line" href="classDiccionario.html#a51a063699a325e85d6c2640e9c4b42cf">  108</a></span>&#160;    <span class="keyword">typedef</span> set&lt;string&gt;::iterator <a class="code" href="classDiccionario.html#a51a063699a325e85d6c2640e9c4b42cf">iterator</a>;</div><div class="line"><a name="l00112"></a><span class="lineno"><a class="line" href="classDiccionario.html#acc32ba2eaee59fdd4836d9a28f04afd0">  112</a></span>&#160;    <span class="keyword">typedef</span> set&lt;string&gt;::const_iterator <a class="code" href="classDiccionario.html#acc32ba2eaee59fdd4836d9a28f04afd0">const_iterator</a>;</div><div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;    <a class="code" href="classDiccionario.html#a51a063699a325e85d6c2640e9c4b42cf">Diccionario::iterator</a> begin();</div><div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;    <a class="code" href="classDiccionario.html#acc32ba2eaee59fdd4836d9a28f04afd0">Diccionario::const_iterator</a> begin() <span class="keyword">const</span>;</div><div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160;    <a class="code" href="classDiccionario.html#a51a063699a325e85d6c2640e9c4b42cf">Diccionario::iterator</a> end();</div><div class="line"><a name="l00132"></a><span class="lineno">  132</span>&#160;    <a class="code" href="classDiccionario.html#acc32ba2eaee59fdd4836d9a28f04afd0">Diccionario::const_iterator</a> end() <span class="keyword">const</span>;</div><div class="line"><a name="l00133"></a><span class="lineno">  133</span>&#160;};</div><div class="line"><a name="l00134"></a><span class="lineno">  134</span>&#160;</div><div class="line"><a name="l00135"></a><span class="lineno">  135</span>&#160;<span class="preprocessor">#endif</span></div><div class="ttc" id="namespacestd_html"><div class="ttname"><a href="namespacestd.html">std</a></div></div>
+<div class="ttc" id="classDiccionario_html_aae047bbcc9d6bc3c7b0b2c308d39048d"><div class="ttname"><a href="classDiccionario.html#aae047bbcc9d6bc3c7b0b2c308d39048d">Diccionario::datos</a></div><div class="ttdeci">set&lt; string &gt; datos</div><div class="ttdef"><b>Definition:</b> Diccionario.h:34</div></div>
+<div class="ttc" id="classDiccionario_html_acc32ba2eaee59fdd4836d9a28f04afd0"><div class="ttname"><a href="classDiccionario.html#acc32ba2eaee59fdd4836d9a28f04afd0">Diccionario::const_iterator</a></div><div class="ttdeci">set&lt; string &gt;::const_iterator const_iterator</div><div class="ttdoc">Iterador constante del diccionario (itera por las palabras de éste) </div><div class="ttdef"><b>Definition:</b> Diccionario.h:112</div></div>
+<div class="ttc" id="classConjunto__Letras_html"><div class="ttname"><a href="classConjunto__Letras.html">Conjunto_Letras</a></div><div class="ttdoc">Una instancia c del TDA Conjunto_Letras es un contenedor set con datos de tipo Letra. </div><div class="ttdef"><b>Definition:</b> Conjunto_Letras.h:21</div></div>
+<div class="ttc" id="Conjunto__Letras_8h_html"><div class="ttname"><a href="Conjunto__Letras_8h.html">Conjunto_Letras.h</a></div><div class="ttdoc">Fichero cabecera del TDA Conjunto_Letras. </div></div>
+<div class="ttc" id="classDiccionario_html"><div class="ttname"><a href="classDiccionario.html">Diccionario</a></div><div class="ttdoc">Una instancia d del TDA Diccionario es un contenedor set con datos de tipo string, que son las palabras que forman el diccionario. </div><div class="ttdef"><b>Definition:</b> Diccionario.h:22</div></div>
+<div class="ttc" id="classDiccionario_html_a51a063699a325e85d6c2640e9c4b42cf"><div class="ttname"><a href="classDiccionario.html#a51a063699a325e85d6c2640e9c4b42cf">Diccionario::iterator</a></div><div class="ttdeci">set&lt; string &gt;::iterator iterator</div><div class="ttdoc">Iterador del diccionario (itera por las palabras de éste) </div><div class="ttdef"><b>Definition:</b> Diccionario.h:108</div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Generado por &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.13
+</small></address>
+</body>
+</html>

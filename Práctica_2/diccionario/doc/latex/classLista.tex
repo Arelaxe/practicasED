@@ -1,0 +1,225 @@
+\hypertarget{classLista}{}\section{Referencia de la plantilla de la Clase Lista$<$ T $>$}
+\label{classLista}\index{Lista$<$ T $>$@{Lista$<$ T $>$}}
+
+
+Una instancia l de la clase \mbox{\hyperlink{classLista}{Lista}} está formada por una cabecera, que es un puntero a la primera celda de la \mbox{\hyperlink{classLista}{Lista}}. La \mbox{\hyperlink{classLista}{Lista}} en sí, es una sucesión de celdas enlazadas de tipo \mbox{\hyperlink{structCeldaLista}{Celda\+Lista}}. La lista es de tipo circular, es decir, cada celda apunta a la posición anterior y a la siguiente.  
+
+
+
+
+{\ttfamily \#include $<$Lista.\+h$>$}
+
+\subsection*{Métodos públicos}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classLista_adce924e21607848663132290be1a959d}\label{classLista_adce924e21607848663132290be1a959d}} 
+\mbox{\hyperlink{classLista_adce924e21607848663132290be1a959d}{Lista}} ()
+\begin{DoxyCompactList}\small\item\em Constructor por defecto. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classLista_ac9895a302242ab2d624e054357aeb13c}{Lista}} (const \mbox{\hyperlink{classLista}{Lista}}$<$ T $>$ \&l)
+\begin{DoxyCompactList}\small\item\em Constructor de copia. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classLista_af297975e278b0c92cbf67d14b2f08366}\label{classLista_af297975e278b0c92cbf67d14b2f08366}} 
+\mbox{\hyperlink{classLista_af297975e278b0c92cbf67d14b2f08366}{$\sim$\+Lista}} ()
+\begin{DoxyCompactList}\small\item\em Destructor. Libera la memoria ocupada por la lista. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classLista}{Lista}}$<$ T $>$ \& \mbox{\hyperlink{classLista_a1f2c4d3a18401f03c216b0bbb7da41fc}{operator=}} (const \mbox{\hyperlink{classLista}{Lista}}$<$ T $>$ \&l)
+\begin{DoxyCompactList}\small\item\em Operador de asignación. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classLista_a7d225f26b4490809aa92bcfd44661c12}{set}} (\mbox{\hyperlink{classPosicion}{Posicion}}$<$ T $>$ p, T e)
+\begin{DoxyCompactList}\small\item\em Modificador que cambia el valor de un elemento de la lista. \end{DoxyCompactList}\item 
+T \mbox{\hyperlink{classLista_add1ea7959a85ded8e73f944259f04328}{get}} (\mbox{\hyperlink{classPosicion}{Posicion}}$<$ T $>$) const
+\begin{DoxyCompactList}\small\item\em Consultor que devuelve lo que hay en una posición determinada. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classPosicion}{Posicion}}$<$ T $>$ \mbox{\hyperlink{classLista_a3ecb3ea6a48f28863bfb99c2f3d59a9d}{insertar}} (\mbox{\hyperlink{classPosicion}{Posicion}}$<$ T $>$ p, T e)
+\begin{DoxyCompactList}\small\item\em Modificador que inserta un nuevo elemento en la lista. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classPosicion}{Posicion}}$<$ T $>$ \mbox{\hyperlink{classLista_a65536b824c9cd33570fab5a98ad536fb}{borrar}} (\mbox{\hyperlink{classPosicion}{Posicion}}$<$ T $>$ p)
+\begin{DoxyCompactList}\small\item\em Modificador que borra una celda de la lista. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classPosicion}{Posicion}}$<$ T $>$ \mbox{\hyperlink{classLista_af73b5f5eb9e67ae9d1346f045d648d0c}{begin}} () const
+\begin{DoxyCompactList}\small\item\em Consultor del primer elemento de la lista. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classPosicion}{Posicion}}$<$ T $>$ \mbox{\hyperlink{classLista_ae88b437349a0e87803d4453946e21f97}{end}} () const
+\begin{DoxyCompactList}\small\item\em Consultor de la última celda de la lista. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{classLista_a59dba3aa3e7c54996e33e5c8c6dabfa2}{Get\+Numero\+Elementos}} () const
+\begin{DoxyCompactList}\small\item\em Consultor del número de elementos de la lista. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Atributos privados}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{structCeldaLista}{Celda\+Lista}}$<$ T $>$ $\ast$ \mbox{\hyperlink{classLista_a2d0dd8c80abfa1bee249300e2f903f03}{cabecera}}
+\end{DoxyCompactItemize}
+
+
+\subsection{Descripción detallada}
+\subsubsection*{template$<$class T$>$\newline
+class Lista$<$ T $>$}
+
+Una instancia l de la clase \mbox{\hyperlink{classLista}{Lista}} está formada por una cabecera, que es un puntero a la primera celda de la \mbox{\hyperlink{classLista}{Lista}}. La \mbox{\hyperlink{classLista}{Lista}} en sí, es una sucesión de celdas enlazadas de tipo \mbox{\hyperlink{structCeldaLista}{Celda\+Lista}}. La lista es de tipo circular, es decir, cada celda apunta a la posición anterior y a la siguiente. 
+
+\subsection{Documentación del constructor y destructor}
+\mbox{\Hypertarget{classLista_ac9895a302242ab2d624e054357aeb13c}\label{classLista_ac9895a302242ab2d624e054357aeb13c}} 
+\index{Lista$<$ T $>$@{Lista$<$ T $>$}!Lista@{Lista}}
+\index{Lista@{Lista}!Lista$<$ T $>$@{Lista$<$ T $>$}}
+\subsubsection{\texorpdfstring{Lista()}{Lista()}}
+{\footnotesize\ttfamily template$<$class T$>$ \\
+\mbox{\hyperlink{classLista}{Lista}}$<$ T $>$\+::\mbox{\hyperlink{classLista}{Lista}} (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classLista}{Lista}}$<$ T $>$ \&}]{l }\end{DoxyParamCaption})}
+
+
+
+Constructor de copia. 
+
+
+\begin{DoxyParams}{Parámetros}
+{\em l} & \mbox{\hyperlink{classLista}{Lista}} que se va a copiar en this \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Documentación de las funciones miembro}
+\mbox{\Hypertarget{classLista_af73b5f5eb9e67ae9d1346f045d648d0c}\label{classLista_af73b5f5eb9e67ae9d1346f045d648d0c}} 
+\index{Lista$<$ T $>$@{Lista$<$ T $>$}!begin@{begin}}
+\index{begin@{begin}!Lista$<$ T $>$@{Lista$<$ T $>$}}
+\subsubsection{\texorpdfstring{begin()}{begin()}}
+{\footnotesize\ttfamily template$<$class T $>$ \\
+\mbox{\hyperlink{classPosicion}{Posicion}}$<$ T $>$ \mbox{\hyperlink{classLista}{Lista}}$<$ T $>$\+::begin (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Consultor del primer elemento de la lista. 
+
+\begin{DoxyReturn}{Devuelve}
+La posición del primer elemento de la lista 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classLista_a65536b824c9cd33570fab5a98ad536fb}\label{classLista_a65536b824c9cd33570fab5a98ad536fb}} 
+\index{Lista$<$ T $>$@{Lista$<$ T $>$}!borrar@{borrar}}
+\index{borrar@{borrar}!Lista$<$ T $>$@{Lista$<$ T $>$}}
+\subsubsection{\texorpdfstring{borrar()}{borrar()}}
+{\footnotesize\ttfamily template$<$class T$>$ \\
+\mbox{\hyperlink{classPosicion}{Posicion}}$<$ T $>$ \mbox{\hyperlink{classLista}{Lista}}$<$ T $>$\+::borrar (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classPosicion}{Posicion}}$<$ T $>$}]{p }\end{DoxyParamCaption})}
+
+
+
+Modificador que borra una celda de la lista. 
+
+
+\begin{DoxyParams}{Parámetros}
+{\em p} & Posición de la celda a borrar \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Devuelve}
+La posición en la que se ha borrado 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classLista_ae88b437349a0e87803d4453946e21f97}\label{classLista_ae88b437349a0e87803d4453946e21f97}} 
+\index{Lista$<$ T $>$@{Lista$<$ T $>$}!end@{end}}
+\index{end@{end}!Lista$<$ T $>$@{Lista$<$ T $>$}}
+\subsubsection{\texorpdfstring{end()}{end()}}
+{\footnotesize\ttfamily template$<$class T $>$ \\
+\mbox{\hyperlink{classPosicion}{Posicion}}$<$ T $>$ \mbox{\hyperlink{classLista}{Lista}}$<$ T $>$\+::end (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Consultor de la última celda de la lista. 
+
+\begin{DoxyReturn}{Devuelve}
+La última celda de la lista 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classLista_add1ea7959a85ded8e73f944259f04328}\label{classLista_add1ea7959a85ded8e73f944259f04328}} 
+\index{Lista$<$ T $>$@{Lista$<$ T $>$}!get@{get}}
+\index{get@{get}!Lista$<$ T $>$@{Lista$<$ T $>$}}
+\subsubsection{\texorpdfstring{get()}{get()}}
+{\footnotesize\ttfamily template$<$class T$>$ \\
+T \mbox{\hyperlink{classLista}{Lista}}$<$ T $>$\+::get (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classPosicion}{Posicion}}$<$ T $>$}]{p }\end{DoxyParamCaption}) const}
+
+
+
+Consultor que devuelve lo que hay en una posición determinada. 
+
+
+\begin{DoxyParams}{Parámetros}
+{\em p} & Posición que se consultará \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Devuelve}
+El elemento de la posición consultada 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classLista_a59dba3aa3e7c54996e33e5c8c6dabfa2}\label{classLista_a59dba3aa3e7c54996e33e5c8c6dabfa2}} 
+\index{Lista$<$ T $>$@{Lista$<$ T $>$}!GetNumeroElementos@{GetNumeroElementos}}
+\index{GetNumeroElementos@{GetNumeroElementos}!Lista$<$ T $>$@{Lista$<$ T $>$}}
+\subsubsection{\texorpdfstring{GetNumeroElementos()}{GetNumeroElementos()}}
+{\footnotesize\ttfamily template$<$class T $>$ \\
+int \mbox{\hyperlink{classLista}{Lista}}$<$ T $>$\+::Get\+Numero\+Elementos (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Consultor del número de elementos de la lista. 
+
+\begin{DoxyReturn}{Devuelve}
+El número de elementos de la lista 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classLista_a3ecb3ea6a48f28863bfb99c2f3d59a9d}\label{classLista_a3ecb3ea6a48f28863bfb99c2f3d59a9d}} 
+\index{Lista$<$ T $>$@{Lista$<$ T $>$}!insertar@{insertar}}
+\index{insertar@{insertar}!Lista$<$ T $>$@{Lista$<$ T $>$}}
+\subsubsection{\texorpdfstring{insertar()}{insertar()}}
+{\footnotesize\ttfamily template$<$class T$>$ \\
+\mbox{\hyperlink{classPosicion}{Posicion}}$<$ T $>$ \mbox{\hyperlink{classLista}{Lista}}$<$ T $>$\+::insertar (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classPosicion}{Posicion}}$<$ T $>$}]{p,  }\item[{T}]{e }\end{DoxyParamCaption})}
+
+
+
+Modificador que inserta un nuevo elemento en la lista. 
+
+
+\begin{DoxyParams}{Parámetros}
+{\em p} & Posición en la que se insertará la nueva celda \\
+\hline
+{\em e} & Nuevo elemento \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Devuelve}
+La posición en la que se ha insertado 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classLista_a1f2c4d3a18401f03c216b0bbb7da41fc}\label{classLista_a1f2c4d3a18401f03c216b0bbb7da41fc}} 
+\index{Lista$<$ T $>$@{Lista$<$ T $>$}!operator=@{operator=}}
+\index{operator=@{operator=}!Lista$<$ T $>$@{Lista$<$ T $>$}}
+\subsubsection{\texorpdfstring{operator=()}{operator=()}}
+{\footnotesize\ttfamily template$<$class T$>$ \\
+\mbox{\hyperlink{classLista}{Lista}}$<$ T $>$ \& \mbox{\hyperlink{classLista}{Lista}}$<$ T $>$\+::operator= (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classLista}{Lista}}$<$ T $>$ \&}]{l }\end{DoxyParamCaption})}
+
+
+
+Operador de asignación. 
+
+
+\begin{DoxyParams}{Parámetros}
+{\em l} & \mbox{\hyperlink{classLista}{Lista}} a asignar \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Devuelve}
+Una referencia a $\ast$this 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classLista_a7d225f26b4490809aa92bcfd44661c12}\label{classLista_a7d225f26b4490809aa92bcfd44661c12}} 
+\index{Lista$<$ T $>$@{Lista$<$ T $>$}!set@{set}}
+\index{set@{set}!Lista$<$ T $>$@{Lista$<$ T $>$}}
+\subsubsection{\texorpdfstring{set()}{set()}}
+{\footnotesize\ttfamily template$<$class T$>$ \\
+void \mbox{\hyperlink{classLista}{Lista}}$<$ T $>$\+::set (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classPosicion}{Posicion}}$<$ T $>$}]{p,  }\item[{T}]{e }\end{DoxyParamCaption})}
+
+
+
+Modificador que cambia el valor de un elemento de la lista. 
+
+
+\begin{DoxyParams}{Parámetros}
+{\em p} & Posición de la celda en la que está el elemento a cambiar \\
+\hline
+{\em e} & Nuevo elemento \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Documentación de los datos miembro}
+\mbox{\Hypertarget{classLista_a2d0dd8c80abfa1bee249300e2f903f03}\label{classLista_a2d0dd8c80abfa1bee249300e2f903f03}} 
+\index{Lista$<$ T $>$@{Lista$<$ T $>$}!cabecera@{cabecera}}
+\index{cabecera@{cabecera}!Lista$<$ T $>$@{Lista$<$ T $>$}}
+\subsubsection{\texorpdfstring{cabecera}{cabecera}}
+{\footnotesize\ttfamily template$<$class T$>$ \\
+\mbox{\hyperlink{structCeldaLista}{Celda\+Lista}}$<$T$>$$\ast$ \mbox{\hyperlink{classLista}{Lista}}$<$ T $>$\+::cabecera\hspace{0.3cm}{\ttfamily [private]}}
+
+Puntero a la primera celda de la \mbox{\hyperlink{classLista}{Lista}} 
+
+La documentación para esta clase fue generada a partir de los siguientes ficheros\+:\begin{DoxyCompactItemize}
+\item 
+include/\mbox{\hyperlink{Lista_8h}{Lista.\+h}}\item 
+include/Lista.\+cpp\end{DoxyCompactItemize}

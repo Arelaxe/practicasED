@@ -1,0 +1,120 @@
+\hypertarget{classBolsa__Letras}{}\section{Referencia de la Clase Bolsa\+\_\+\+Letras}
+\label{classBolsa__Letras}\index{Bolsa\+\_\+\+Letras@{Bolsa\+\_\+\+Letras}}
+
+
+Una instancia b del T\+DA \hyperlink{classBolsa__Letras}{Bolsa\+\_\+\+Letras} es un contenedor unordered\+\_\+multiset con datos de tipo char.  
+
+
+
+
+{\ttfamily \#include $<$Bolsa\+\_\+\+Letras.\+h$>$}
+
+\subsection*{Métodos públicos}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classBolsa__Letras_aac3edc3708e10d1decee5575a0cfd543}\label{classBolsa__Letras_aac3edc3708e10d1decee5575a0cfd543}} 
+\hyperlink{classBolsa__Letras_aac3edc3708e10d1decee5575a0cfd543}{Bolsa\+\_\+\+Letras} ()
+\begin{DoxyCompactList}\small\item\em Constructor por defecto. \end{DoxyCompactList}\item 
+\hyperlink{classBolsa__Letras_a52db817ae18cc5dd9339c6bc6a1a88b3}{Bolsa\+\_\+\+Letras} (\hyperlink{classConjunto__Letras}{Conjunto\+\_\+\+Letras} c)
+\begin{DoxyCompactList}\small\item\em Constructor con un parámetro, forma una bolsa de letras a partir de un conjunto de letras. \end{DoxyCompactList}\item 
+int \hyperlink{classBolsa__Letras_a25bbc49ca79e8182a2adc9243b145655}{Get\+Total\+Letras} () const
+\begin{DoxyCompactList}\small\item\em Método consultor del total de letras de la bolsa. \end{DoxyCompactList}\item 
+char \hyperlink{classBolsa__Letras_aa5540422db02a4bad84498ea5820e7f8}{Saca\+Una\+Letra} ()
+\begin{DoxyCompactList}\small\item\em Método que saca aleatoriamente una letra de la bolsa, es decir, la devuelve y la elimina de ésta. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Atributos privados}
+\begin{DoxyCompactItemize}
+\item 
+unordered\+\_\+multiset$<$ char $>$ \hyperlink{classBolsa__Letras_a758f691f0b50cfd6c35aa09b02b6e545}{bolsa}
+\end{DoxyCompactItemize}
+\subsection*{Amigas}
+\begin{DoxyCompactItemize}
+\item 
+ostream \& \hyperlink{classBolsa__Letras_a61d5cc8910f22dbb655349218d33d874}{operator$<$$<$} (ostream \&out, const \hyperlink{classBolsa__Letras}{Bolsa\+\_\+\+Letras} \&b)
+\begin{DoxyCompactList}\small\item\em Operador de inserción de flujo. Imprime una bolsa de letras. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Descripción detallada}
+Una instancia b del T\+DA \hyperlink{classBolsa__Letras}{Bolsa\+\_\+\+Letras} es un contenedor unordered\+\_\+multiset con datos de tipo char. 
+
+\subsection{Documentación del constructor y destructor}
+\mbox{\Hypertarget{classBolsa__Letras_a52db817ae18cc5dd9339c6bc6a1a88b3}\label{classBolsa__Letras_a52db817ae18cc5dd9339c6bc6a1a88b3}} 
+\index{Bolsa\+\_\+\+Letras@{Bolsa\+\_\+\+Letras}!Bolsa\+\_\+\+Letras@{Bolsa\+\_\+\+Letras}}
+\index{Bolsa\+\_\+\+Letras@{Bolsa\+\_\+\+Letras}!Bolsa\+\_\+\+Letras@{Bolsa\+\_\+\+Letras}}
+\subsubsection{\texorpdfstring{Bolsa\+\_\+\+Letras()}{Bolsa\_Letras()}}
+{\footnotesize\ttfamily Bolsa\+\_\+\+Letras\+::\+Bolsa\+\_\+\+Letras (\begin{DoxyParamCaption}\item[{\hyperlink{classConjunto__Letras}{Conjunto\+\_\+\+Letras}}]{c }\end{DoxyParamCaption})}
+
+
+
+Constructor con un parámetro, forma una bolsa de letras a partir de un conjunto de letras. 
+
+
+\begin{DoxyParams}{Parámetros}
+{\em c} & Conjunto de letras a partir del cuál se formará la bolsa \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Documentación de las funciones miembro}
+\mbox{\Hypertarget{classBolsa__Letras_a25bbc49ca79e8182a2adc9243b145655}\label{classBolsa__Letras_a25bbc49ca79e8182a2adc9243b145655}} 
+\index{Bolsa\+\_\+\+Letras@{Bolsa\+\_\+\+Letras}!Get\+Total\+Letras@{Get\+Total\+Letras}}
+\index{Get\+Total\+Letras@{Get\+Total\+Letras}!Bolsa\+\_\+\+Letras@{Bolsa\+\_\+\+Letras}}
+\subsubsection{\texorpdfstring{Get\+Total\+Letras()}{GetTotalLetras()}}
+{\footnotesize\ttfamily int Bolsa\+\_\+\+Letras\+::\+Get\+Total\+Letras (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Método consultor del total de letras de la bolsa. 
+
+\begin{DoxyReturn}{Devuelve}
+El número de letras de la bolsa 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classBolsa__Letras_aa5540422db02a4bad84498ea5820e7f8}\label{classBolsa__Letras_aa5540422db02a4bad84498ea5820e7f8}} 
+\index{Bolsa\+\_\+\+Letras@{Bolsa\+\_\+\+Letras}!Saca\+Una\+Letra@{Saca\+Una\+Letra}}
+\index{Saca\+Una\+Letra@{Saca\+Una\+Letra}!Bolsa\+\_\+\+Letras@{Bolsa\+\_\+\+Letras}}
+\subsubsection{\texorpdfstring{Saca\+Una\+Letra()}{SacaUnaLetra()}}
+{\footnotesize\ttfamily char Bolsa\+\_\+\+Letras\+::\+Saca\+Una\+Letra (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Método que saca aleatoriamente una letra de la bolsa, es decir, la devuelve y la elimina de ésta. 
+
+\begin{DoxyReturn}{Devuelve}
+La letra sacada 
+\end{DoxyReturn}
+
+
+\subsection{Documentación de las funciones relacionadas y clases amigas}
+\mbox{\Hypertarget{classBolsa__Letras_a61d5cc8910f22dbb655349218d33d874}\label{classBolsa__Letras_a61d5cc8910f22dbb655349218d33d874}} 
+\index{Bolsa\+\_\+\+Letras@{Bolsa\+\_\+\+Letras}!operator$<$$<$@{operator$<$$<$}}
+\index{operator$<$$<$@{operator$<$$<$}!Bolsa\+\_\+\+Letras@{Bolsa\+\_\+\+Letras}}
+\subsubsection{\texorpdfstring{operator$<$$<$}{operator<<}}
+{\footnotesize\ttfamily ostream\& operator$<$$<$ (\begin{DoxyParamCaption}\item[{ostream \&}]{out,  }\item[{const \hyperlink{classBolsa__Letras}{Bolsa\+\_\+\+Letras} \&}]{b }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [friend]}}
+
+
+
+Operador de inserción de flujo. Imprime una bolsa de letras. 
+
+
+\begin{DoxyParams}{Parámetros}
+{\em out} & Flujo de salida \\
+\hline
+{\em b} & Bolsa a imprimir \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Devuelve}
+Una referencia al flujo out 
+\end{DoxyReturn}
+
+
+\subsection{Documentación de los datos miembro}
+\mbox{\Hypertarget{classBolsa__Letras_a758f691f0b50cfd6c35aa09b02b6e545}\label{classBolsa__Letras_a758f691f0b50cfd6c35aa09b02b6e545}} 
+\index{Bolsa\+\_\+\+Letras@{Bolsa\+\_\+\+Letras}!bolsa@{bolsa}}
+\index{bolsa@{bolsa}!Bolsa\+\_\+\+Letras@{Bolsa\+\_\+\+Letras}}
+\subsubsection{\texorpdfstring{bolsa}{bolsa}}
+{\footnotesize\ttfamily unordered\+\_\+multiset$<$char$>$ Bolsa\+\_\+\+Letras\+::bolsa\hspace{0.3cm}{\ttfamily [private]}}
+
+Bolsa de letras 
+
+La documentación para esta clase fue generada a partir del siguiente fichero\+:\begin{DoxyCompactItemize}
+\item 
+include/\hyperlink{Bolsa__Letras_8h}{Bolsa\+\_\+\+Letras.\+h}\end{DoxyCompactItemize}

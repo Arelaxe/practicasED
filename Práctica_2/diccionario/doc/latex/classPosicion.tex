@@ -1,0 +1,177 @@
+\hypertarget{classPosicion}{}\section{Referencia de la plantilla de la Clase Posicion$<$ T $>$}
+\label{classPosicion}\index{Posicion$<$ T $>$@{Posicion$<$ T $>$}}
+
+
+Una instancia p de la clase \mbox{\hyperlink{classPosicion}{Posicion}} es un objeto que contiene un elemento de tipo puntero a \mbox{\hyperlink{structCeldaLista}{Celda\+Lista}}, que apunta a una celda de la lista.  
+
+
+
+
+{\ttfamily \#include $<$Lista.\+h$>$}
+
+\subsection*{Métodos públicos}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classPosicion_afc28cb4988f9eaf59eb5601e238ff026}\label{classPosicion_afc28cb4988f9eaf59eb5601e238ff026}} 
+\mbox{\hyperlink{classPosicion_afc28cb4988f9eaf59eb5601e238ff026}{Posicion}} ()
+\begin{DoxyCompactList}\small\item\em Constructor por defecto. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classPosicion}{Posicion}}$<$ T $>$ \& \mbox{\hyperlink{classPosicion_a0c65060f8b49a04c46b78f7256289294}{operator=}} (const \mbox{\hyperlink{classPosicion}{Posicion}}$<$ T $>$ \&p)
+\begin{DoxyCompactList}\small\item\em Operador de asignación. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classPosicion}{Posicion}}$<$ T $>$ \& \mbox{\hyperlink{classPosicion_adcd8a716e798d29d8c2832d0c6ee020b}{operator++}} ()
+\begin{DoxyCompactList}\small\item\em Operador de incremento prefijo. Incrementar una posición significa pasar a la posición siguiente. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classPosicion}{Posicion}}$<$ T $>$ \mbox{\hyperlink{classPosicion_a7b4e96a420c4839fe47252fc3dab4999}{operator++}} (int)
+\begin{DoxyCompactList}\small\item\em Operador de incremento postfijo. Incrementar una posición significa pasar a la posición siguiente. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classPosicion}{Posicion}}$<$ T $>$ \& \mbox{\hyperlink{classPosicion_a0844ed364ac81dd1a00cb4454e727a45}{operator-\/-\/}} ()
+\begin{DoxyCompactList}\small\item\em Operador de decremento prefijo. Decrementar una posición significa pasar a la posición anterior. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classPosicion}{Posicion}}$<$ T $>$ \mbox{\hyperlink{classPosicion_a31bc501aa4cfb1dd0fdf47a711aada09}{operator-\/-\/}} (int)
+\begin{DoxyCompactList}\small\item\em Operador de decremento postfijo. Decrementar una posición significa pasar a la posición anterior. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classPosicion_a75a2ee78cb3ada83ba7165600c43583f}{operator==}} (const \mbox{\hyperlink{classPosicion}{Posicion}}$<$ T $>$ \&p) const
+\begin{DoxyCompactList}\small\item\em Operador ==. Compara dos posiciones para ver si son iguales. Dos posiciones son iguales si apuntan al mismo elemento. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classPosicion_aadc0745f3f50e9c6706e742fcf77fd2d}{operator!=}} (const \mbox{\hyperlink{classPosicion}{Posicion}}$<$ T $>$ \&p) const
+\begin{DoxyCompactList}\small\item\em Operador !=. Compara dos posiciones para ver si son distintas. Dos posiciones son distintas si no apuntan al mismo elemento. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Atributos privados}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{structCeldaLista}{Celda\+Lista}}$<$ T $>$ $\ast$ \mbox{\hyperlink{classPosicion_afddf381142b097c87ef24c0cb1eb458c}{puntero}}
+\end{DoxyCompactItemize}
+\subsection*{Amigas}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classPosicion_aaf51eba006c8c436041f4a80ac819c75}\label{classPosicion_aaf51eba006c8c436041f4a80ac819c75}} 
+class {\bfseries Lista$<$ T $>$}
+\end{DoxyCompactItemize}
+
+
+\subsection{Descripción detallada}
+\subsubsection*{template$<$class T$>$\newline
+class Posicion$<$ T $>$}
+
+Una instancia p de la clase \mbox{\hyperlink{classPosicion}{Posicion}} es un objeto que contiene un elemento de tipo puntero a \mbox{\hyperlink{structCeldaLista}{Celda\+Lista}}, que apunta a una celda de la lista. 
+
+\subsection{Documentación de las funciones miembro}
+\mbox{\Hypertarget{classPosicion_aadc0745f3f50e9c6706e742fcf77fd2d}\label{classPosicion_aadc0745f3f50e9c6706e742fcf77fd2d}} 
+\index{Posicion$<$ T $>$@{Posicion$<$ T $>$}!operator"!=@{operator"!=}}
+\index{operator"!=@{operator"!=}!Posicion$<$ T $>$@{Posicion$<$ T $>$}}
+\subsubsection{\texorpdfstring{operator"!=()}{operator!=()}}
+{\footnotesize\ttfamily template$<$class T $>$ \\
+bool \mbox{\hyperlink{classPosicion}{Posicion}}$<$ T $>$\+::operator!= (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classPosicion}{Posicion}}$<$ T $>$ \&}]{p }\end{DoxyParamCaption}) const}
+
+
+
+Operador !=. Compara dos posiciones para ver si son distintas. Dos posiciones son distintas si no apuntan al mismo elemento. 
+
+
+\begin{DoxyParams}{Parámetros}
+{\em p} & La posición con la que se comparará \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Devuelve}
+True si p es distinto de $\ast$this, False si p no es distinto de $\ast$this 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classPosicion_adcd8a716e798d29d8c2832d0c6ee020b}\label{classPosicion_adcd8a716e798d29d8c2832d0c6ee020b}} 
+\index{Posicion$<$ T $>$@{Posicion$<$ T $>$}!operator++@{operator++}}
+\index{operator++@{operator++}!Posicion$<$ T $>$@{Posicion$<$ T $>$}}
+\subsubsection{\texorpdfstring{operator++()}{operator++()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily template$<$class T $>$ \\
+\mbox{\hyperlink{classPosicion}{Posicion}}$<$ T $>$ \& \mbox{\hyperlink{classPosicion}{Posicion}}$<$ T $>$\+::operator++ (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Operador de incremento prefijo. Incrementar una posición significa pasar a la posición siguiente. 
+
+\begin{DoxyReturn}{Devuelve}
+La posición incrementada 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classPosicion_a7b4e96a420c4839fe47252fc3dab4999}\label{classPosicion_a7b4e96a420c4839fe47252fc3dab4999}} 
+\index{Posicion$<$ T $>$@{Posicion$<$ T $>$}!operator++@{operator++}}
+\index{operator++@{operator++}!Posicion$<$ T $>$@{Posicion$<$ T $>$}}
+\subsubsection{\texorpdfstring{operator++()}{operator++()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily template$<$class T $>$ \\
+\mbox{\hyperlink{classPosicion}{Posicion}}$<$ T $>$ \mbox{\hyperlink{classPosicion}{Posicion}}$<$ T $>$\+::operator++ (\begin{DoxyParamCaption}\item[{int}]{ }\end{DoxyParamCaption})}
+
+
+
+Operador de incremento postfijo. Incrementar una posición significa pasar a la posición siguiente. 
+
+\begin{DoxyReturn}{Devuelve}
+La posición antes de ser incrementada 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classPosicion_a0844ed364ac81dd1a00cb4454e727a45}\label{classPosicion_a0844ed364ac81dd1a00cb4454e727a45}} 
+\index{Posicion$<$ T $>$@{Posicion$<$ T $>$}!operator-\/-\/@{operator-\/-\/}}
+\index{operator-\/-\/@{operator-\/-\/}!Posicion$<$ T $>$@{Posicion$<$ T $>$}}
+\subsubsection{\texorpdfstring{operator-\/-\/()}{operator--()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily template$<$class T $>$ \\
+\mbox{\hyperlink{classPosicion}{Posicion}}$<$ T $>$ \& \mbox{\hyperlink{classPosicion}{Posicion}}$<$ T $>$\+::operator-\/-\/ (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Operador de decremento prefijo. Decrementar una posición significa pasar a la posición anterior. 
+
+\begin{DoxyReturn}{Devuelve}
+La posición decrementada 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classPosicion_a31bc501aa4cfb1dd0fdf47a711aada09}\label{classPosicion_a31bc501aa4cfb1dd0fdf47a711aada09}} 
+\index{Posicion$<$ T $>$@{Posicion$<$ T $>$}!operator-\/-\/@{operator-\/-\/}}
+\index{operator-\/-\/@{operator-\/-\/}!Posicion$<$ T $>$@{Posicion$<$ T $>$}}
+\subsubsection{\texorpdfstring{operator-\/-\/()}{operator--()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily template$<$class T $>$ \\
+\mbox{\hyperlink{classPosicion}{Posicion}}$<$ T $>$ \mbox{\hyperlink{classPosicion}{Posicion}}$<$ T $>$\+::operator-\/-\/ (\begin{DoxyParamCaption}\item[{int}]{ }\end{DoxyParamCaption})}
+
+
+
+Operador de decremento postfijo. Decrementar una posición significa pasar a la posición anterior. 
+
+\begin{DoxyReturn}{Devuelve}
+La posición antes de ser decrementada 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classPosicion_a0c65060f8b49a04c46b78f7256289294}\label{classPosicion_a0c65060f8b49a04c46b78f7256289294}} 
+\index{Posicion$<$ T $>$@{Posicion$<$ T $>$}!operator=@{operator=}}
+\index{operator=@{operator=}!Posicion$<$ T $>$@{Posicion$<$ T $>$}}
+\subsubsection{\texorpdfstring{operator=()}{operator=()}}
+{\footnotesize\ttfamily template$<$class T $>$ \\
+\mbox{\hyperlink{classPosicion}{Posicion}}$<$ T $>$ \& \mbox{\hyperlink{classPosicion}{Posicion}}$<$ T $>$\+::operator= (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classPosicion}{Posicion}}$<$ T $>$ \&}]{p }\end{DoxyParamCaption})}
+
+
+
+Operador de asignación. 
+
+
+\begin{DoxyParams}{Parámetros}
+{\em p} & Posición a asignar \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classPosicion_a75a2ee78cb3ada83ba7165600c43583f}\label{classPosicion_a75a2ee78cb3ada83ba7165600c43583f}} 
+\index{Posicion$<$ T $>$@{Posicion$<$ T $>$}!operator==@{operator==}}
+\index{operator==@{operator==}!Posicion$<$ T $>$@{Posicion$<$ T $>$}}
+\subsubsection{\texorpdfstring{operator==()}{operator==()}}
+{\footnotesize\ttfamily template$<$class T $>$ \\
+bool \mbox{\hyperlink{classPosicion}{Posicion}}$<$ T $>$\+::operator== (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classPosicion}{Posicion}}$<$ T $>$ \&}]{p }\end{DoxyParamCaption}) const}
+
+
+
+Operador ==. Compara dos posiciones para ver si son iguales. Dos posiciones son iguales si apuntan al mismo elemento. 
+
+
+\begin{DoxyParams}{Parámetros}
+{\em p} & La posición con la que se comparará \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Devuelve}
+True si p es igual que $\ast$this False si p no es igual que $\ast$this 
+\end{DoxyReturn}
+
+
+\subsection{Documentación de los datos miembro}
+\mbox{\Hypertarget{classPosicion_afddf381142b097c87ef24c0cb1eb458c}\label{classPosicion_afddf381142b097c87ef24c0cb1eb458c}} 
+\index{Posicion$<$ T $>$@{Posicion$<$ T $>$}!puntero@{puntero}}
+\index{puntero@{puntero}!Posicion$<$ T $>$@{Posicion$<$ T $>$}}
+\subsubsection{\texorpdfstring{puntero}{puntero}}
+{\footnotesize\ttfamily template$<$class T$>$ \\
+\mbox{\hyperlink{structCeldaLista}{Celda\+Lista}}$<$T$>$$\ast$ \mbox{\hyperlink{classPosicion}{Posicion}}$<$ T $>$\+::puntero\hspace{0.3cm}{\ttfamily [private]}}
+
+Puntero a la celda de la \mbox{\hyperlink{classLista}{Lista}} 
+
+La documentación para esta clase fue generada a partir de los siguientes ficheros\+:\begin{DoxyCompactItemize}
+\item 
+include/\mbox{\hyperlink{Lista_8h}{Lista.\+h}}\item 
+include/Lista.\+cpp\end{DoxyCompactItemize}

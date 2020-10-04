@@ -1,0 +1,316 @@
+\hypertarget{classDiccionario}{}\section{Referencia de la Clase Diccionario}
+\label{classDiccionario}\index{Diccionario@{Diccionario}}
+
+
+Una instancia d del T\+DA \hyperlink{classDiccionario}{Diccionario} es un contenedor set con datos de tipo string, que son las palabras que forman el diccionario.  
+
+
+
+
+{\ttfamily \#include $<$Diccionario.\+h$>$}
+
+\subsection*{Tipos públicos}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classDiccionario_a51a063699a325e85d6c2640e9c4b42cf}\label{classDiccionario_a51a063699a325e85d6c2640e9c4b42cf}} 
+typedef set$<$ string $>$\+::\hyperlink{classDiccionario_a51a063699a325e85d6c2640e9c4b42cf}{iterator} \hyperlink{classDiccionario_a51a063699a325e85d6c2640e9c4b42cf}{iterator}
+\begin{DoxyCompactList}\small\item\em Iterador del diccionario (itera por las palabras de éste) \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classDiccionario_acc32ba2eaee59fdd4836d9a28f04afd0}\label{classDiccionario_acc32ba2eaee59fdd4836d9a28f04afd0}} 
+typedef set$<$ string $>$\+::\hyperlink{classDiccionario_acc32ba2eaee59fdd4836d9a28f04afd0}{const\+\_\+iterator} \hyperlink{classDiccionario_acc32ba2eaee59fdd4836d9a28f04afd0}{const\+\_\+iterator}
+\begin{DoxyCompactList}\small\item\em Iterador constante del diccionario (itera por las palabras de éste) \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Métodos públicos}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classDiccionario_aa0a2191ec706b256c35b5229cc197b15}\label{classDiccionario_aa0a2191ec706b256c35b5229cc197b15}} 
+\hyperlink{classDiccionario_aa0a2191ec706b256c35b5229cc197b15}{Diccionario} ()
+\begin{DoxyCompactList}\small\item\em Constructor por defecto. \end{DoxyCompactList}\item 
+int \hyperlink{classDiccionario_a74ea14ecba52288b84ffc6ea1f2fba99}{size} () const
+\begin{DoxyCompactList}\small\item\em Consultor del tamaño del diccionario. \end{DoxyCompactList}\item 
+vector$<$ string $>$ \hyperlink{classDiccionario_a66cf11b04fcfea08bf292f7ecbc4e376}{Palabras\+Longitud} (int longitud) const
+\begin{DoxyCompactList}\small\item\em Método que halla las palabras de una determinada longitud. \end{DoxyCompactList}\item 
+bool \hyperlink{classDiccionario_a2859234e7c6a7c2cc9120b32d814e7a1}{Esta} (string palabra) const
+\begin{DoxyCompactList}\small\item\em Método que comprueba si una palabra está en el diccionario. \end{DoxyCompactList}\item 
+bool \hyperlink{classDiccionario_a8df85eb554f7539a5d690fd5b531627b}{Palabra\+Valida} (const string palabra, const list$<$ char $>$ lista) const
+\begin{DoxyCompactList}\small\item\em Comprueba si una palabra es válida, es decir, si se puede formar con las letras de la lista y está en el diccionario. \end{DoxyCompactList}\item 
+list$<$ string $>$ \hyperlink{classDiccionario_ac46deb245f9647bd4c2b9e53bf09d355}{Forma\+Palabras} (const list$<$ char $>$ lista) const
+\begin{DoxyCompactList}\small\item\em Método que forma palabras que están en el diccionario a partir de una lista de letras. \end{DoxyCompactList}\item 
+list$<$ string $>$ \hyperlink{classDiccionario_adfe4d8e5ba24ffae01075505a0ae5e27}{Forma\+Palabras\+Max\+Puntuacion} (const list$<$ char $>$ lista, const \hyperlink{classConjunto__Letras}{Conjunto\+\_\+\+Letras} c) const
+\begin{DoxyCompactList}\small\item\em Método que forma las palabras de máxima puntuación con las letras de una lista. \end{DoxyCompactList}\item 
+list$<$ string $>$ \hyperlink{classDiccionario_ac3ac6036aed4a89b7b8955be2750d1c4}{Forma\+Palabras\+Max\+Longitud} (const list$<$ char $>$ lista) const
+\begin{DoxyCompactList}\small\item\em Método que forma las palabras de máxima longitud con las letras de una lista. \end{DoxyCompactList}\item 
+\hyperlink{classDiccionario_a51a063699a325e85d6c2640e9c4b42cf}{Diccionario\+::iterator} \hyperlink{classDiccionario_ab270eb969d580f01b358e648a3061ac4}{begin} ()
+\begin{DoxyCompactList}\small\item\em Método begin del iterador del diccionario. \end{DoxyCompactList}\item 
+\hyperlink{classDiccionario_acc32ba2eaee59fdd4836d9a28f04afd0}{Diccionario\+::const\+\_\+iterator} \hyperlink{classDiccionario_a5196245f1d267b0ddb9350dfa8f33b2c}{begin} () const
+\begin{DoxyCompactList}\small\item\em Método begin del iterador constante del diccionario. \end{DoxyCompactList}\item 
+\hyperlink{classDiccionario_a51a063699a325e85d6c2640e9c4b42cf}{Diccionario\+::iterator} \hyperlink{classDiccionario_a7de585de002dfdec241b645bc57a3d0a}{end} ()
+\begin{DoxyCompactList}\small\item\em Método end del iterador del diccionario. \end{DoxyCompactList}\item 
+\hyperlink{classDiccionario_acc32ba2eaee59fdd4836d9a28f04afd0}{Diccionario\+::const\+\_\+iterator} \hyperlink{classDiccionario_a8161ae4e92a33e516bf73741e8299846}{end} () const
+\begin{DoxyCompactList}\small\item\em Método end del iterador constante del diccionario. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Atributos privados}
+\begin{DoxyCompactItemize}
+\item 
+set$<$ string $>$ \hyperlink{classDiccionario_aae047bbcc9d6bc3c7b0b2c308d39048d}{datos}
+\end{DoxyCompactItemize}
+\subsection*{Amigas}
+\begin{DoxyCompactItemize}
+\item 
+istream \& \hyperlink{classDiccionario_acf72932a86e98d33aef771dde204a44d}{operator$>$$>$} (istream \&in, \hyperlink{classDiccionario}{Diccionario} \&d)
+\begin{DoxyCompactList}\small\item\em Operador de extracción de flujo. Lee un diccionario. \end{DoxyCompactList}\item 
+ostream \& \hyperlink{classDiccionario_aeb8c0d19c5f4c9d9680ab42b51dbb38e}{operator$<$$<$} (ostream \&out, const \hyperlink{classDiccionario}{Diccionario} \&d)
+\begin{DoxyCompactList}\small\item\em Operador de inserción de flujo. Imprime un diccionario. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Descripción detallada}
+Una instancia d del T\+DA \hyperlink{classDiccionario}{Diccionario} es un contenedor set con datos de tipo string, que son las palabras que forman el diccionario. 
+
+\subsection{Documentación de las funciones miembro}
+\mbox{\Hypertarget{classDiccionario_ab270eb969d580f01b358e648a3061ac4}\label{classDiccionario_ab270eb969d580f01b358e648a3061ac4}} 
+\index{Diccionario@{Diccionario}!begin@{begin}}
+\index{begin@{begin}!Diccionario@{Diccionario}}
+\subsubsection{\texorpdfstring{begin()}{begin()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \hyperlink{classDiccionario_a51a063699a325e85d6c2640e9c4b42cf}{Diccionario\+::iterator} Diccionario\+::begin (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Método begin del iterador del diccionario. 
+
+\begin{DoxyReturn}{Devuelve}
+Un iterador a la primera palabra del diccionario 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classDiccionario_a5196245f1d267b0ddb9350dfa8f33b2c}\label{classDiccionario_a5196245f1d267b0ddb9350dfa8f33b2c}} 
+\index{Diccionario@{Diccionario}!begin@{begin}}
+\index{begin@{begin}!Diccionario@{Diccionario}}
+\subsubsection{\texorpdfstring{begin()}{begin()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \hyperlink{classDiccionario_acc32ba2eaee59fdd4836d9a28f04afd0}{Diccionario\+::const\+\_\+iterator} Diccionario\+::begin (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Método begin del iterador constante del diccionario. 
+
+\begin{DoxyReturn}{Devuelve}
+Un iterador constante la primera palabra del diccionario 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classDiccionario_a7de585de002dfdec241b645bc57a3d0a}\label{classDiccionario_a7de585de002dfdec241b645bc57a3d0a}} 
+\index{Diccionario@{Diccionario}!end@{end}}
+\index{end@{end}!Diccionario@{Diccionario}}
+\subsubsection{\texorpdfstring{end()}{end()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \hyperlink{classDiccionario_a51a063699a325e85d6c2640e9c4b42cf}{Diccionario\+::iterator} Diccionario\+::end (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Método end del iterador del diccionario. 
+
+\begin{DoxyReturn}{Devuelve}
+Un iterador al final del contenedor set de string (no al último string del diccionario) 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classDiccionario_a8161ae4e92a33e516bf73741e8299846}\label{classDiccionario_a8161ae4e92a33e516bf73741e8299846}} 
+\index{Diccionario@{Diccionario}!end@{end}}
+\index{end@{end}!Diccionario@{Diccionario}}
+\subsubsection{\texorpdfstring{end()}{end()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \hyperlink{classDiccionario_acc32ba2eaee59fdd4836d9a28f04afd0}{Diccionario\+::const\+\_\+iterator} Diccionario\+::end (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Método end del iterador constante del diccionario. 
+
+\begin{DoxyReturn}{Devuelve}
+Un iterador constante al final del contenedor set de string (no al último string del diccionario) 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classDiccionario_a2859234e7c6a7c2cc9120b32d814e7a1}\label{classDiccionario_a2859234e7c6a7c2cc9120b32d814e7a1}} 
+\index{Diccionario@{Diccionario}!Esta@{Esta}}
+\index{Esta@{Esta}!Diccionario@{Diccionario}}
+\subsubsection{\texorpdfstring{Esta()}{Esta()}}
+{\footnotesize\ttfamily bool Diccionario\+::\+Esta (\begin{DoxyParamCaption}\item[{string}]{palabra }\end{DoxyParamCaption}) const}
+
+
+
+Método que comprueba si una palabra está en el diccionario. 
+
+
+\begin{DoxyParams}{Parámetros}
+{\em palabra} & Palabra a consultar \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Devuelve}
+True si palabra está en el diccionario. False si no lo está 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classDiccionario_ac46deb245f9647bd4c2b9e53bf09d355}\label{classDiccionario_ac46deb245f9647bd4c2b9e53bf09d355}} 
+\index{Diccionario@{Diccionario}!Forma\+Palabras@{Forma\+Palabras}}
+\index{Forma\+Palabras@{Forma\+Palabras}!Diccionario@{Diccionario}}
+\subsubsection{\texorpdfstring{Forma\+Palabras()}{FormaPalabras()}}
+{\footnotesize\ttfamily list$<$string$>$ Diccionario\+::\+Forma\+Palabras (\begin{DoxyParamCaption}\item[{const list$<$ char $>$}]{lista }\end{DoxyParamCaption}) const}
+
+
+
+Método que forma palabras que están en el diccionario a partir de una lista de letras. 
+
+
+\begin{DoxyParams}{Parámetros}
+{\em lista} & Lista de letras con las que formar palabras \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Devuelve}
+Todas las palabras del diccionario que se pueden formar con las letras de la lista 
+\end{DoxyReturn}
+\begin{DoxyPrecond}{Precondición}
+Los caracteres de la lista deben ser letras 
+\end{DoxyPrecond}
+\mbox{\Hypertarget{classDiccionario_ac3ac6036aed4a89b7b8955be2750d1c4}\label{classDiccionario_ac3ac6036aed4a89b7b8955be2750d1c4}} 
+\index{Diccionario@{Diccionario}!Forma\+Palabras\+Max\+Longitud@{Forma\+Palabras\+Max\+Longitud}}
+\index{Forma\+Palabras\+Max\+Longitud@{Forma\+Palabras\+Max\+Longitud}!Diccionario@{Diccionario}}
+\subsubsection{\texorpdfstring{Forma\+Palabras\+Max\+Longitud()}{FormaPalabrasMaxLongitud()}}
+{\footnotesize\ttfamily list$<$string$>$ Diccionario\+::\+Forma\+Palabras\+Max\+Longitud (\begin{DoxyParamCaption}\item[{const list$<$ char $>$}]{lista }\end{DoxyParamCaption}) const}
+
+
+
+Método que forma las palabras de máxima longitud con las letras de una lista. 
+
+
+\begin{DoxyParams}{Parámetros}
+{\em lista} & Lista de letras con las que formar palabras \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Devuelve}
+Las palabras de máxima longitud del diccionario que se pueden formar con las letras de la lista 
+\end{DoxyReturn}
+\begin{DoxyPrecond}{Precondición}
+Los caracteres de la lista deben ser letras 
+
+Las letras de la lista deben estar en el conjunto 
+\end{DoxyPrecond}
+\mbox{\Hypertarget{classDiccionario_adfe4d8e5ba24ffae01075505a0ae5e27}\label{classDiccionario_adfe4d8e5ba24ffae01075505a0ae5e27}} 
+\index{Diccionario@{Diccionario}!Forma\+Palabras\+Max\+Puntuacion@{Forma\+Palabras\+Max\+Puntuacion}}
+\index{Forma\+Palabras\+Max\+Puntuacion@{Forma\+Palabras\+Max\+Puntuacion}!Diccionario@{Diccionario}}
+\subsubsection{\texorpdfstring{Forma\+Palabras\+Max\+Puntuacion()}{FormaPalabrasMaxPuntuacion()}}
+{\footnotesize\ttfamily list$<$string$>$ Diccionario\+::\+Forma\+Palabras\+Max\+Puntuacion (\begin{DoxyParamCaption}\item[{const list$<$ char $>$}]{lista,  }\item[{const \hyperlink{classConjunto__Letras}{Conjunto\+\_\+\+Letras}}]{c }\end{DoxyParamCaption}) const}
+
+
+
+Método que forma las palabras de máxima puntuación con las letras de una lista. 
+
+
+\begin{DoxyParams}{Parámetros}
+{\em lista} & Lista de letras con las que formar palabras \\
+\hline
+{\em c} & Conjunto de letras del que coger la puntuación de las letras \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Devuelve}
+Las palabras de máxima puntuación del diccionario que se pueden formar con las letras de la lista 
+\end{DoxyReturn}
+\begin{DoxyPrecond}{Precondición}
+Los caracteres de la lista deben ser letras 
+
+Las letras de la lista deben estar en el conjunto 
+\end{DoxyPrecond}
+\mbox{\Hypertarget{classDiccionario_a66cf11b04fcfea08bf292f7ecbc4e376}\label{classDiccionario_a66cf11b04fcfea08bf292f7ecbc4e376}} 
+\index{Diccionario@{Diccionario}!Palabras\+Longitud@{Palabras\+Longitud}}
+\index{Palabras\+Longitud@{Palabras\+Longitud}!Diccionario@{Diccionario}}
+\subsubsection{\texorpdfstring{Palabras\+Longitud()}{PalabrasLongitud()}}
+{\footnotesize\ttfamily vector$<$string$>$ Diccionario\+::\+Palabras\+Longitud (\begin{DoxyParamCaption}\item[{int}]{longitud }\end{DoxyParamCaption}) const}
+
+
+
+Método que halla las palabras de una determinada longitud. 
+
+
+\begin{DoxyParams}{Parámetros}
+{\em longitud} & La longitud de las palabras que se quieren consultar \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Devuelve}
+Las palabras de dicha longitud 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classDiccionario_a8df85eb554f7539a5d690fd5b531627b}\label{classDiccionario_a8df85eb554f7539a5d690fd5b531627b}} 
+\index{Diccionario@{Diccionario}!Palabra\+Valida@{Palabra\+Valida}}
+\index{Palabra\+Valida@{Palabra\+Valida}!Diccionario@{Diccionario}}
+\subsubsection{\texorpdfstring{Palabra\+Valida()}{PalabraValida()}}
+{\footnotesize\ttfamily bool Diccionario\+::\+Palabra\+Valida (\begin{DoxyParamCaption}\item[{const string}]{palabra,  }\item[{const list$<$ char $>$}]{lista }\end{DoxyParamCaption}) const}
+
+
+
+Comprueba si una palabra es válida, es decir, si se puede formar con las letras de la lista y está en el diccionario. 
+
+
+\begin{DoxyParams}{Parámetros}
+{\em palabra} & Palabra a comprobar si es válida \\
+\hline
+{\em lista} & Lista de letras de las que deberá estar formada la palabra \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Devuelve}
+True si la palabra es válida. False si no lo es 
+\end{DoxyReturn}
+\begin{DoxyPrecond}{Precondición}
+Los caracteres de la lista deben ser letras 
+\end{DoxyPrecond}
+\mbox{\Hypertarget{classDiccionario_a74ea14ecba52288b84ffc6ea1f2fba99}\label{classDiccionario_a74ea14ecba52288b84ffc6ea1f2fba99}} 
+\index{Diccionario@{Diccionario}!size@{size}}
+\index{size@{size}!Diccionario@{Diccionario}}
+\subsubsection{\texorpdfstring{size()}{size()}}
+{\footnotesize\ttfamily int Diccionario\+::size (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Consultor del tamaño del diccionario. 
+
+\begin{DoxyReturn}{Devuelve}
+El número de palabras del diccionario 
+\end{DoxyReturn}
+
+
+\subsection{Documentación de las funciones relacionadas y clases amigas}
+\mbox{\Hypertarget{classDiccionario_aeb8c0d19c5f4c9d9680ab42b51dbb38e}\label{classDiccionario_aeb8c0d19c5f4c9d9680ab42b51dbb38e}} 
+\index{Diccionario@{Diccionario}!operator$<$$<$@{operator$<$$<$}}
+\index{operator$<$$<$@{operator$<$$<$}!Diccionario@{Diccionario}}
+\subsubsection{\texorpdfstring{operator$<$$<$}{operator<<}}
+{\footnotesize\ttfamily ostream\& operator$<$$<$ (\begin{DoxyParamCaption}\item[{ostream \&}]{out,  }\item[{const \hyperlink{classDiccionario}{Diccionario} \&}]{d }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [friend]}}
+
+
+
+Operador de inserción de flujo. Imprime un diccionario. 
+
+
+\begin{DoxyParams}{Parámetros}
+{\em out} & Flujo de salida \\
+\hline
+{\em d} & \hyperlink{classDiccionario}{Diccionario} a imprimir \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Devuelve}
+Una referencia al flujo out 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classDiccionario_acf72932a86e98d33aef771dde204a44d}\label{classDiccionario_acf72932a86e98d33aef771dde204a44d}} 
+\index{Diccionario@{Diccionario}!operator$>$$>$@{operator$>$$>$}}
+\index{operator$>$$>$@{operator$>$$>$}!Diccionario@{Diccionario}}
+\subsubsection{\texorpdfstring{operator$>$$>$}{operator>>}}
+{\footnotesize\ttfamily istream\& operator$>$$>$ (\begin{DoxyParamCaption}\item[{istream \&}]{in,  }\item[{\hyperlink{classDiccionario}{Diccionario} \&}]{d }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [friend]}}
+
+
+
+Operador de extracción de flujo. Lee un diccionario. 
+
+
+\begin{DoxyParams}{Parámetros}
+{\em in} & Flujo de entrada \\
+\hline
+{\em d} & \hyperlink{classDiccionario}{Diccionario} a leer \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Devuelve}
+Una referencia al flujo in 
+\end{DoxyReturn}
+
+
+\subsection{Documentación de los datos miembro}
+\mbox{\Hypertarget{classDiccionario_aae047bbcc9d6bc3c7b0b2c308d39048d}\label{classDiccionario_aae047bbcc9d6bc3c7b0b2c308d39048d}} 
+\index{Diccionario@{Diccionario}!datos@{datos}}
+\index{datos@{datos}!Diccionario@{Diccionario}}
+\subsubsection{\texorpdfstring{datos}{datos}}
+{\footnotesize\ttfamily set$<$string$>$ Diccionario\+::datos\hspace{0.3cm}{\ttfamily [private]}}
+
+Conjunto de palabras 
+
+La documentación para esta clase fue generada a partir del siguiente fichero\+:\begin{DoxyCompactItemize}
+\item 
+include/\hyperlink{Diccionario_8h}{Diccionario.\+h}\end{DoxyCompactItemize}

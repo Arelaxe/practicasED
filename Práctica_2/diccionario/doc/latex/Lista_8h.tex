@@ -1,0 +1,30 @@
+\hypertarget{Lista_8h}{}\section{Referencia del Archivo include/\+Lista.h}
+\label{Lista_8h}\index{include/Lista.h@{include/Lista.h}}
+
+
+Fichero cabecera del T\+DA \mbox{\hyperlink{classLista}{Lista}}.  
+
+
+{\ttfamily \#include \char`\"{}Lista.\+cpp\char`\"{}}\newline
+\subsection*{Clases}
+\begin{DoxyCompactItemize}
+\item 
+struct \mbox{\hyperlink{structCeldaLista}{Celda\+Lista$<$ T $>$}}
+\begin{DoxyCompactList}\small\item\em Una instancia c del struct \mbox{\hyperlink{structCeldaLista}{Celda\+Lista}} es un objeto que contiene un elemento de tipo T y un puntero a la celda anterior y otro a la celda siguiente de la lista a la que pertenece. \end{DoxyCompactList}\item 
+class \mbox{\hyperlink{classLista}{Lista$<$ T $>$}}
+\begin{DoxyCompactList}\small\item\em Una instancia l de la clase \mbox{\hyperlink{classLista}{Lista}} está formada por una cabecera, que es un puntero a la primera celda de la \mbox{\hyperlink{classLista}{Lista}}. La \mbox{\hyperlink{classLista}{Lista}} en sí, es una sucesión de celdas enlazadas de tipo \mbox{\hyperlink{structCeldaLista}{Celda\+Lista}}. La lista es de tipo circular, es decir, cada celda apunta a la posición anterior y a la siguiente. \end{DoxyCompactList}\item 
+class \mbox{\hyperlink{classPosicion}{Posicion$<$ T $>$}}
+\begin{DoxyCompactList}\small\item\em Una instancia p de la clase \mbox{\hyperlink{classPosicion}{Posicion}} es un objeto que contiene un elemento de tipo puntero a \mbox{\hyperlink{structCeldaLista}{Celda\+Lista}}, que apunta a una celda de la lista. \end{DoxyCompactList}\item 
+class \mbox{\hyperlink{classLista}{Lista$<$ T $>$}}
+\begin{DoxyCompactList}\small\item\em Una instancia l de la clase \mbox{\hyperlink{classLista}{Lista}} está formada por una cabecera, que es un puntero a la primera celda de la \mbox{\hyperlink{classLista}{Lista}}. La \mbox{\hyperlink{classLista}{Lista}} en sí, es una sucesión de celdas enlazadas de tipo \mbox{\hyperlink{structCeldaLista}{Celda\+Lista}}. La lista es de tipo circular, es decir, cada celda apunta a la posición anterior y a la siguiente. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Funciones}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{Lista_8h_af955812134f9e455e0c51d857a7eb93f}\label{Lista_8h_af955812134f9e455e0c51d857a7eb93f}} 
+{\footnotesize template$<$class T $>$ }\\void {\bfseries intercambiar} (T p, T q)
+\end{DoxyCompactItemize}
+
+
+\subsection{Descripción detallada}
+Fichero cabecera del T\+DA \mbox{\hyperlink{classLista}{Lista}}. 
+

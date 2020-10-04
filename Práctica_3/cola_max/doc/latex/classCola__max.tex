@@ -1,0 +1,340 @@
+\hypertarget{classCola__max}{}\section{Referencia de la plantilla de la Clase Cola\+\_\+max$<$ T $>$}
+\label{classCola__max}\index{Cola\+\_\+max$<$ T $>$@{Cola\+\_\+max$<$ T $>$}}
+
+
+Una instancia c de la clase \hyperlink{classCola__max}{Cola\+\_\+max} (implementada con vector dinámico) es un objeto que contiene un elemento de la clase vector de S\+TL, que funciona como envoltorio para datos de tipo \hyperlink{structPareja}{Pareja}.  
+
+
+
+
+{\ttfamily \#include $<$Cola\+\_\+max\+\_\+vd.\+h$>$}
+
+\subsection*{Métodos públicos}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classCola__max_af9a05d272cd9447f8ac449e8703c8ecb}\label{classCola__max_af9a05d272cd9447f8ac449e8703c8ecb}} 
+\hyperlink{classCola__max_af9a05d272cd9447f8ac449e8703c8ecb}{Cola\+\_\+max} ()
+\begin{DoxyCompactList}\small\item\em Constructor por defecto de la clase. \end{DoxyCompactList}\item 
+void \hyperlink{classCola__max_aaba30a35b89d26659408198baccee5aa}{poner} (T elemento)
+\begin{DoxyCompactList}\small\item\em Añade un elemento al final de la cola. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classCola__max_a21f1d915c674522d438f8288177e7ecb}\label{classCola__max_a21f1d915c674522d438f8288177e7ecb}} 
+void \hyperlink{classCola__max_a21f1d915c674522d438f8288177e7ecb}{quitar} ()
+\begin{DoxyCompactList}\small\item\em Quita el primer elemento de la cola. \end{DoxyCompactList}\item 
+const T \& \hyperlink{classCola__max_ae1a93314e01ae1587b0e14fd768da476}{maximo} ()
+\begin{DoxyCompactList}\small\item\em Consultor del máximo de la cola. \end{DoxyCompactList}\item 
+int \hyperlink{classCola__max_adb26d0a523133af1f48dca6febebf72e}{num\+\_\+elementos} ()
+\begin{DoxyCompactList}\small\item\em Consultor del número elementos de la cola. \end{DoxyCompactList}\item 
+const T \& \hyperlink{classCola__max_a231de7f196376d7f27905b235a45db98}{frente} ()
+\begin{DoxyCompactList}\small\item\em Consultor del frente de la cola. \end{DoxyCompactList}\item 
+bool \hyperlink{classCola__max_af0b18f86af91ef94d7a035f87a4dcb2b}{vacia} ()
+\begin{DoxyCompactList}\small\item\em Método que comprueba si la cola está vacía. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classCola__max_af9a05d272cd9447f8ac449e8703c8ecb}\label{classCola__max_af9a05d272cd9447f8ac449e8703c8ecb}} 
+\hyperlink{classCola__max_af9a05d272cd9447f8ac449e8703c8ecb}{Cola\+\_\+max} ()
+\begin{DoxyCompactList}\small\item\em Constructor por defecto de la clase. \end{DoxyCompactList}\item 
+void \hyperlink{classCola__max_aaba30a35b89d26659408198baccee5aa}{poner} (T elemento)
+\begin{DoxyCompactList}\small\item\em Añade un elemento al final de la cola. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classCola__max_a21f1d915c674522d438f8288177e7ecb}\label{classCola__max_a21f1d915c674522d438f8288177e7ecb}} 
+void \hyperlink{classCola__max_a21f1d915c674522d438f8288177e7ecb}{quitar} ()
+\begin{DoxyCompactList}\small\item\em Quita el primer elemento de la cola. \end{DoxyCompactList}\item 
+const T \hyperlink{classCola__max_ad5745cfed3c1d4dc1cceef84c07096b0}{maximo} ()
+\begin{DoxyCompactList}\small\item\em Consultor del máximo de la cola. \end{DoxyCompactList}\item 
+int \hyperlink{classCola__max_adb26d0a523133af1f48dca6febebf72e}{num\+\_\+elementos} ()
+\begin{DoxyCompactList}\small\item\em Consultor del número de elementos de la cola. \end{DoxyCompactList}\item 
+const T \hyperlink{classCola__max_a810ac166b15dbd5019109aaf144705e9}{frente} ()
+\begin{DoxyCompactList}\small\item\em Consultor del frente de la cola. \end{DoxyCompactList}\item 
+bool \hyperlink{classCola__max_af0b18f86af91ef94d7a035f87a4dcb2b}{vacia} ()
+\begin{DoxyCompactList}\small\item\em Método que comprueba si la cola está vacía. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Métodos privados}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{classCola__max_a3da0159f810815fbbd7f3ba895f65e62}{actualizar\+\_\+maximo} (T nuevo\+\_\+maximo)
+\begin{DoxyCompactList}\small\item\em Método auxiliar que actualiza el máximo de la cola. \end{DoxyCompactList}\item 
+void \hyperlink{classCola__max_a514a99c8c65ea41f9f28d56a9db1c6c6}{actualizar\+\_\+maximo\+\_\+intervalo} (T nuevo\+\_\+maximo)
+\begin{DoxyCompactList}\small\item\em Método auxiliar que actualiza parcialmente el máximo de la cola. \end{DoxyCompactList}\item 
+void \hyperlink{classCola__max_a3da0159f810815fbbd7f3ba895f65e62}{actualizar\+\_\+maximo} (T nuevo\+\_\+maximo)
+\begin{DoxyCompactList}\small\item\em Método auxiliar que actualiza el máximo de la cola. \end{DoxyCompactList}\item 
+void \hyperlink{classCola__max_a514a99c8c65ea41f9f28d56a9db1c6c6}{actualizar\+\_\+maximo\+\_\+intervalo} (T nuevo\+\_\+maximo)
+\begin{DoxyCompactList}\small\item\em Método auxiliar que actualiza el máximo parcial de la cola. \end{DoxyCompactList}\item 
+void \hyperlink{classCola__max_af3e9275233822fa1d64149b10262dff3}{volcar\+\_\+pila} (stack$<$ \hyperlink{structPareja}{Pareja}$<$ T $>$$>$ \&a\+\_\+volcar, stack$<$ \hyperlink{structPareja}{Pareja}$<$ T $>$$>$ \&volcada)
+\begin{DoxyCompactList}\small\item\em Método auxiliar que vuelca una pila en otra. Se usa principalmente para realizar correctamente la entrada/salida de datos. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Atributos privados}
+\begin{DoxyCompactItemize}
+\item 
+vector$<$ \hyperlink{structPareja}{Pareja}$<$ T $>$ $>$ \hyperlink{classCola__max_ada37415a95bf9e23e54aa10b478270cf}{datos}
+\item 
+stack$<$ \hyperlink{structPareja}{Pareja}$<$ T $>$ $>$ \hyperlink{classCola__max_a6bf7cfc0872c68657dbc7fabb4fa2fc5}{entrada}
+\item 
+stack$<$ \hyperlink{structPareja}{Pareja}$<$ T $>$ $>$ \hyperlink{classCola__max_ac59781b55ff4f65d8a87b06e2d498fa5}{salida}
+\end{DoxyCompactItemize}
+
+
+\subsection{Descripción detallada}
+\subsubsection*{template$<$class T$>$\newline
+class Cola\+\_\+max$<$ T $>$}
+
+Una instancia c de la clase \hyperlink{classCola__max}{Cola\+\_\+max} (implementada con vector dinámico) es un objeto que contiene un elemento de la clase vector de S\+TL, que funciona como envoltorio para datos de tipo \hyperlink{structPareja}{Pareja}. 
+
+Una instancia c de la clase \hyperlink{classCola__max}{Cola\+\_\+max} (implementada con pilas) es un objeto que contiene dos elementos de la clase stack de la S\+TL. La primera pila se usará para la entrada de datos y la segunda para la salida de datos. 
+
+\subsection{Documentación de las funciones miembro}
+\mbox{\Hypertarget{classCola__max_a3da0159f810815fbbd7f3ba895f65e62}\label{classCola__max_a3da0159f810815fbbd7f3ba895f65e62}} 
+\index{Cola\+\_\+max@{Cola\+\_\+max}!actualizar\+\_\+maximo@{actualizar\+\_\+maximo}}
+\index{actualizar\+\_\+maximo@{actualizar\+\_\+maximo}!Cola\+\_\+max@{Cola\+\_\+max}}
+\subsubsection{\texorpdfstring{actualizar\+\_\+maximo()}{actualizar\_maximo()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily template$<$class T $>$ \\
+void \hyperlink{classCola__max}{Cola\+\_\+max}$<$ T $>$\+::actualizar\+\_\+maximo (\begin{DoxyParamCaption}\item[{T}]{nuevo\+\_\+maximo }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Método auxiliar que actualiza el máximo de la cola. 
+
+
+\begin{DoxyParams}{Parámetros}
+{\em nuevo\+\_\+maximo} & Nuevo máximo de la cola \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classCola__max_a3da0159f810815fbbd7f3ba895f65e62}\label{classCola__max_a3da0159f810815fbbd7f3ba895f65e62}} 
+\index{Cola\+\_\+max@{Cola\+\_\+max}!actualizar\+\_\+maximo@{actualizar\+\_\+maximo}}
+\index{actualizar\+\_\+maximo@{actualizar\+\_\+maximo}!Cola\+\_\+max@{Cola\+\_\+max}}
+\subsubsection{\texorpdfstring{actualizar\+\_\+maximo()}{actualizar\_maximo()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily template$<$class T $>$ \\
+void \hyperlink{classCola__max}{Cola\+\_\+max}$<$ T $>$\+::actualizar\+\_\+maximo (\begin{DoxyParamCaption}\item[{T}]{nuevo\+\_\+maximo }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Método auxiliar que actualiza el máximo de la cola. 
+
+
+\begin{DoxyParams}{Parámetros}
+{\em nuevo\+\_\+maximo} & Nuevo máximo de la cola \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classCola__max_a514a99c8c65ea41f9f28d56a9db1c6c6}\label{classCola__max_a514a99c8c65ea41f9f28d56a9db1c6c6}} 
+\index{Cola\+\_\+max@{Cola\+\_\+max}!actualizar\+\_\+maximo\+\_\+intervalo@{actualizar\+\_\+maximo\+\_\+intervalo}}
+\index{actualizar\+\_\+maximo\+\_\+intervalo@{actualizar\+\_\+maximo\+\_\+intervalo}!Cola\+\_\+max@{Cola\+\_\+max}}
+\subsubsection{\texorpdfstring{actualizar\+\_\+maximo\+\_\+intervalo()}{actualizar\_maximo\_intervalo()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily template$<$class T $>$ \\
+void \hyperlink{classCola__max}{Cola\+\_\+max}$<$ T $>$\+::actualizar\+\_\+maximo\+\_\+intervalo (\begin{DoxyParamCaption}\item[{T}]{nuevo\+\_\+maximo }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Método auxiliar que actualiza parcialmente el máximo de la cola. 
+
+
+\begin{DoxyParams}{Parámetros}
+{\em nuevo\+\_\+maximo} & Nuevo máximo parcial de la cola \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classCola__max_a514a99c8c65ea41f9f28d56a9db1c6c6}\label{classCola__max_a514a99c8c65ea41f9f28d56a9db1c6c6}} 
+\index{Cola\+\_\+max@{Cola\+\_\+max}!actualizar\+\_\+maximo\+\_\+intervalo@{actualizar\+\_\+maximo\+\_\+intervalo}}
+\index{actualizar\+\_\+maximo\+\_\+intervalo@{actualizar\+\_\+maximo\+\_\+intervalo}!Cola\+\_\+max@{Cola\+\_\+max}}
+\subsubsection{\texorpdfstring{actualizar\+\_\+maximo\+\_\+intervalo()}{actualizar\_maximo\_intervalo()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily template$<$class T $>$ \\
+void \hyperlink{classCola__max}{Cola\+\_\+max}$<$ T $>$\+::actualizar\+\_\+maximo\+\_\+intervalo (\begin{DoxyParamCaption}\item[{T}]{nuevo\+\_\+maximo }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Método auxiliar que actualiza el máximo parcial de la cola. 
+
+
+\begin{DoxyParams}{Parámetros}
+{\em nuevo\+\_\+maximo} & Nuevo máximo parcial de la cola \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classCola__max_a231de7f196376d7f27905b235a45db98}\label{classCola__max_a231de7f196376d7f27905b235a45db98}} 
+\index{Cola\+\_\+max@{Cola\+\_\+max}!frente@{frente}}
+\index{frente@{frente}!Cola\+\_\+max@{Cola\+\_\+max}}
+\subsubsection{\texorpdfstring{frente()}{frente()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily template$<$class T $>$ \\
+const T\& \hyperlink{classCola__max}{Cola\+\_\+max}$<$ T $>$\+::frente (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Consultor del frente de la cola. 
+
+\begin{DoxyReturn}{Devuelve}
+El primer elemento de la cola 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classCola__max_a810ac166b15dbd5019109aaf144705e9}\label{classCola__max_a810ac166b15dbd5019109aaf144705e9}} 
+\index{Cola\+\_\+max@{Cola\+\_\+max}!frente@{frente}}
+\index{frente@{frente}!Cola\+\_\+max@{Cola\+\_\+max}}
+\subsubsection{\texorpdfstring{frente()}{frente()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily template$<$class T $>$ \\
+const T \hyperlink{classCola__max}{Cola\+\_\+max}$<$ T $>$\+::frente (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Consultor del frente de la cola. 
+
+\begin{DoxyReturn}{Devuelve}
+El primer elemento de la cola 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classCola__max_ae1a93314e01ae1587b0e14fd768da476}\label{classCola__max_ae1a93314e01ae1587b0e14fd768da476}} 
+\index{Cola\+\_\+max@{Cola\+\_\+max}!maximo@{maximo}}
+\index{maximo@{maximo}!Cola\+\_\+max@{Cola\+\_\+max}}
+\subsubsection{\texorpdfstring{maximo()}{maximo()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily template$<$class T $>$ \\
+const T\& \hyperlink{classCola__max}{Cola\+\_\+max}$<$ T $>$\+::maximo (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Consultor del máximo de la cola. 
+
+\begin{DoxyReturn}{Devuelve}
+El máximo de la cola 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classCola__max_ad5745cfed3c1d4dc1cceef84c07096b0}\label{classCola__max_ad5745cfed3c1d4dc1cceef84c07096b0}} 
+\index{Cola\+\_\+max@{Cola\+\_\+max}!maximo@{maximo}}
+\index{maximo@{maximo}!Cola\+\_\+max@{Cola\+\_\+max}}
+\subsubsection{\texorpdfstring{maximo()}{maximo()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily template$<$class T $>$ \\
+const T \hyperlink{classCola__max}{Cola\+\_\+max}$<$ T $>$\+::maximo (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Consultor del máximo de la cola. 
+
+\begin{DoxyReturn}{Devuelve}
+El máximo de la cola 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classCola__max_adb26d0a523133af1f48dca6febebf72e}\label{classCola__max_adb26d0a523133af1f48dca6febebf72e}} 
+\index{Cola\+\_\+max@{Cola\+\_\+max}!num\+\_\+elementos@{num\+\_\+elementos}}
+\index{num\+\_\+elementos@{num\+\_\+elementos}!Cola\+\_\+max@{Cola\+\_\+max}}
+\subsubsection{\texorpdfstring{num\+\_\+elementos()}{num\_elementos()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily template$<$class T $>$ \\
+int \hyperlink{classCola__max}{Cola\+\_\+max}$<$ T $>$\+::num\+\_\+elementos (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Consultor del número elementos de la cola. 
+
+\begin{DoxyReturn}{Devuelve}
+El número de elementos de la cola 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classCola__max_adb26d0a523133af1f48dca6febebf72e}\label{classCola__max_adb26d0a523133af1f48dca6febebf72e}} 
+\index{Cola\+\_\+max@{Cola\+\_\+max}!num\+\_\+elementos@{num\+\_\+elementos}}
+\index{num\+\_\+elementos@{num\+\_\+elementos}!Cola\+\_\+max@{Cola\+\_\+max}}
+\subsubsection{\texorpdfstring{num\+\_\+elementos()}{num\_elementos()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily template$<$class T $>$ \\
+int \hyperlink{classCola__max}{Cola\+\_\+max}$<$ T $>$\+::num\+\_\+elementos (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Consultor del número de elementos de la cola. 
+
+\begin{DoxyReturn}{Devuelve}
+El número de elementos de la cola 
+\end{DoxyReturn}
+\begin{DoxyPrecond}{Precondición}
+Al menos una de las dos pilas debe no estar vacía 
+\end{DoxyPrecond}
+\mbox{\Hypertarget{classCola__max_aaba30a35b89d26659408198baccee5aa}\label{classCola__max_aaba30a35b89d26659408198baccee5aa}} 
+\index{Cola\+\_\+max@{Cola\+\_\+max}!poner@{poner}}
+\index{poner@{poner}!Cola\+\_\+max@{Cola\+\_\+max}}
+\subsubsection{\texorpdfstring{poner()}{poner()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily template$<$class T $>$ \\
+void \hyperlink{classCola__max}{Cola\+\_\+max}$<$ T $>$\+::poner (\begin{DoxyParamCaption}\item[{T}]{elemento }\end{DoxyParamCaption})}
+
+
+
+Añade un elemento al final de la cola. 
+
+
+\begin{DoxyParams}{Parámetros}
+{\em elemento} & Elemento a añadir \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classCola__max_aaba30a35b89d26659408198baccee5aa}\label{classCola__max_aaba30a35b89d26659408198baccee5aa}} 
+\index{Cola\+\_\+max@{Cola\+\_\+max}!poner@{poner}}
+\index{poner@{poner}!Cola\+\_\+max@{Cola\+\_\+max}}
+\subsubsection{\texorpdfstring{poner()}{poner()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily template$<$class T $>$ \\
+void \hyperlink{classCola__max}{Cola\+\_\+max}$<$ T $>$\+::poner (\begin{DoxyParamCaption}\item[{T}]{elemento }\end{DoxyParamCaption})}
+
+
+
+Añade un elemento al final de la cola. 
+
+
+\begin{DoxyParams}{Parámetros}
+{\em elemento} & Elemento a añadir \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classCola__max_af0b18f86af91ef94d7a035f87a4dcb2b}\label{classCola__max_af0b18f86af91ef94d7a035f87a4dcb2b}} 
+\index{Cola\+\_\+max@{Cola\+\_\+max}!vacia@{vacia}}
+\index{vacia@{vacia}!Cola\+\_\+max@{Cola\+\_\+max}}
+\subsubsection{\texorpdfstring{vacia()}{vacia()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily template$<$class T $>$ \\
+bool \hyperlink{classCola__max}{Cola\+\_\+max}$<$ T $>$\+::vacia (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Método que comprueba si la cola está vacía. 
+
+\begin{DoxyReturn}{Devuelve}
+True si la cola está vacía ~\newline
+ False si no lo está 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classCola__max_af0b18f86af91ef94d7a035f87a4dcb2b}\label{classCola__max_af0b18f86af91ef94d7a035f87a4dcb2b}} 
+\index{Cola\+\_\+max@{Cola\+\_\+max}!vacia@{vacia}}
+\index{vacia@{vacia}!Cola\+\_\+max@{Cola\+\_\+max}}
+\subsubsection{\texorpdfstring{vacia()}{vacia()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily template$<$class T $>$ \\
+bool \hyperlink{classCola__max}{Cola\+\_\+max}$<$ T $>$\+::vacia (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Método que comprueba si la cola está vacía. 
+
+\begin{DoxyReturn}{Devuelve}
+True si la cola está vacía ~\newline
+ False si no lo está 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classCola__max_af3e9275233822fa1d64149b10262dff3}\label{classCola__max_af3e9275233822fa1d64149b10262dff3}} 
+\index{Cola\+\_\+max@{Cola\+\_\+max}!volcar\+\_\+pila@{volcar\+\_\+pila}}
+\index{volcar\+\_\+pila@{volcar\+\_\+pila}!Cola\+\_\+max@{Cola\+\_\+max}}
+\subsubsection{\texorpdfstring{volcar\+\_\+pila()}{volcar\_pila()}}
+{\footnotesize\ttfamily template$<$class T $>$ \\
+void \hyperlink{classCola__max}{Cola\+\_\+max}$<$ T $>$\+::volcar\+\_\+pila (\begin{DoxyParamCaption}\item[{stack$<$ \hyperlink{structPareja}{Pareja}$<$ T $>$$>$ \&}]{a\+\_\+volcar,  }\item[{stack$<$ \hyperlink{structPareja}{Pareja}$<$ T $>$$>$ \&}]{volcada }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Método auxiliar que vuelca una pila en otra. Se usa principalmente para realizar correctamente la entrada/salida de datos. 
+
+
+\begin{DoxyParams}{Parámetros}
+{\em a\+\_\+volcar} & Pila que se va a volcar \\
+\hline
+{\em volcada} & Pila en la que se volcará \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Documentación de los datos miembro}
+\mbox{\Hypertarget{classCola__max_ada37415a95bf9e23e54aa10b478270cf}\label{classCola__max_ada37415a95bf9e23e54aa10b478270cf}} 
+\index{Cola\+\_\+max@{Cola\+\_\+max}!datos@{datos}}
+\index{datos@{datos}!Cola\+\_\+max@{Cola\+\_\+max}}
+\subsubsection{\texorpdfstring{datos}{datos}}
+{\footnotesize\ttfamily template$<$class T $>$ \\
+vector$<$\hyperlink{structPareja}{Pareja}$<$T$>$ $>$ \hyperlink{classCola__max}{Cola\+\_\+max}$<$ T $>$\+::datos\hspace{0.3cm}{\ttfamily [private]}}
+
+Vector que almacena los datos de tipo Pareja$<$\+T$>$ \mbox{\Hypertarget{classCola__max_a6bf7cfc0872c68657dbc7fabb4fa2fc5}\label{classCola__max_a6bf7cfc0872c68657dbc7fabb4fa2fc5}} 
+\index{Cola\+\_\+max@{Cola\+\_\+max}!entrada@{entrada}}
+\index{entrada@{entrada}!Cola\+\_\+max@{Cola\+\_\+max}}
+\subsubsection{\texorpdfstring{entrada}{entrada}}
+{\footnotesize\ttfamily template$<$class T $>$ \\
+stack$<$\hyperlink{structPareja}{Pareja}$<$T$>$ $>$ \hyperlink{classCola__max}{Cola\+\_\+max}$<$ T $>$\+::entrada\hspace{0.3cm}{\ttfamily [private]}}
+
+Pila para la entrada de datos \mbox{\Hypertarget{classCola__max_ac59781b55ff4f65d8a87b06e2d498fa5}\label{classCola__max_ac59781b55ff4f65d8a87b06e2d498fa5}} 
+\index{Cola\+\_\+max@{Cola\+\_\+max}!salida@{salida}}
+\index{salida@{salida}!Cola\+\_\+max@{Cola\+\_\+max}}
+\subsubsection{\texorpdfstring{salida}{salida}}
+{\footnotesize\ttfamily template$<$class T $>$ \\
+stack$<$\hyperlink{structPareja}{Pareja}$<$T$>$ $>$ \hyperlink{classCola__max}{Cola\+\_\+max}$<$ T $>$\+::salida\hspace{0.3cm}{\ttfamily [private]}}
+
+Pila para la salida de datos 
+
+La documentación para esta clase fue generada a partir de los siguientes ficheros\+:\begin{DoxyCompactItemize}
+\item 
+include/\hyperlink{Cola__max__vd_8h}{Cola\+\_\+max\+\_\+vd.\+h}\item 
+include/\hyperlink{Cola__max__pila_8h}{Cola\+\_\+max\+\_\+pila.\+h}\end{DoxyCompactItemize}

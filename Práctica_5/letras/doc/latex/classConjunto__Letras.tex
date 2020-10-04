@@ -1,0 +1,204 @@
+\hypertarget{classConjunto__Letras}{}\section{Referencia de la Clase Conjunto\+\_\+\+Letras}
+\label{classConjunto__Letras}\index{Conjunto\+\_\+\+Letras@{Conjunto\+\_\+\+Letras}}
+
+
+Una instancia c del T\+DA \hyperlink{classConjunto__Letras}{Conjunto\+\_\+\+Letras} es un contenedor set con datos de tipo \hyperlink{classLetra}{Letra}.  
+
+
+
+
+{\ttfamily \#include $<$Conjunto\+\_\+\+Letras.\+h$>$}
+
+\subsection*{Tipos públicos}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classConjunto__Letras_a2be8a16582f74bbe7561955083f02a52}\label{classConjunto__Letras_a2be8a16582f74bbe7561955083f02a52}} 
+typedef set$<$ \hyperlink{classLetra}{Letra} $>$\+::\hyperlink{classConjunto__Letras_a2be8a16582f74bbe7561955083f02a52}{iterator} \hyperlink{classConjunto__Letras_a2be8a16582f74bbe7561955083f02a52}{iterator}
+\begin{DoxyCompactList}\small\item\em Iterador del conjunto de letras. Itera por las letras de éste. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classConjunto__Letras_a66b252ad22ca76b522ef68fc7e6d09b1}\label{classConjunto__Letras_a66b252ad22ca76b522ef68fc7e6d09b1}} 
+typedef set$<$ \hyperlink{classLetra}{Letra} $>$\+::\hyperlink{classConjunto__Letras_a66b252ad22ca76b522ef68fc7e6d09b1}{const\+\_\+iterator} \hyperlink{classConjunto__Letras_a66b252ad22ca76b522ef68fc7e6d09b1}{const\+\_\+iterator}
+\begin{DoxyCompactList}\small\item\em Iterador constante del conjunto de letras. Itera por las letras de éste. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Métodos públicos}
+\begin{DoxyCompactItemize}
+\item 
+int \hyperlink{classConjunto__Letras_a2958b1e88656da47fb1d7e527dbb0853}{Calcular\+Puntuacion} (const string palabra) const
+\begin{DoxyCompactList}\small\item\em Método que calcula la puntuación de una palabra según los datos del conjunto de letras. \end{DoxyCompactList}\item 
+\hyperlink{classLetra}{Letra} \hyperlink{classConjunto__Letras_ac004308c22155ad0f3a9f2a890f03727}{Encuentra\+Letra} (char letra) const
+\begin{DoxyCompactList}\small\item\em Método que encuentra una letra en el conjunto de letras a partir de su carácter. \end{DoxyCompactList}\item 
+\hyperlink{classConjunto__Letras_a2be8a16582f74bbe7561955083f02a52}{Conjunto\+\_\+\+Letras\+::iterator} \hyperlink{classConjunto__Letras_aaefd083db74ab48e49f747dd47147e02}{begin} ()
+\begin{DoxyCompactList}\small\item\em Método begin del iterador del conjunto de letras. \end{DoxyCompactList}\item 
+\hyperlink{classConjunto__Letras_a66b252ad22ca76b522ef68fc7e6d09b1}{Conjunto\+\_\+\+Letras\+::const\+\_\+iterator} \hyperlink{classConjunto__Letras_a05e3def044414513abc7d6048de5f9ce}{begin} () const
+\begin{DoxyCompactList}\small\item\em Método begin del iterador constante del conjunto de letras. \end{DoxyCompactList}\item 
+\hyperlink{classConjunto__Letras_a2be8a16582f74bbe7561955083f02a52}{Conjunto\+\_\+\+Letras\+::iterator} \hyperlink{classConjunto__Letras_a29f4eafc4df0b35a596bae262d53a7cb}{end} ()
+\begin{DoxyCompactList}\small\item\em Método end del iterador del conjunto de letras. \end{DoxyCompactList}\item 
+\hyperlink{classConjunto__Letras_a66b252ad22ca76b522ef68fc7e6d09b1}{Conjunto\+\_\+\+Letras\+::const\+\_\+iterator} \hyperlink{classConjunto__Letras_a1e84b5382d45645267eb8c50884679f1}{end} () const
+\begin{DoxyCompactList}\small\item\em Método end del iterador constante del conjunto de letras. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Atributos privados}
+\begin{DoxyCompactItemize}
+\item 
+set$<$ \hyperlink{classLetra}{Letra} $>$ \hyperlink{classConjunto__Letras_a9b9b3e1c3fd227d0fe961769f5e05894}{conjunto}
+\end{DoxyCompactItemize}
+\subsection*{Amigas}
+\begin{DoxyCompactItemize}
+\item 
+istream \& \hyperlink{classConjunto__Letras_abf08384cdc42718a16ac3604ddd954cf}{operator$>$$>$} (istream \&in, \hyperlink{classConjunto__Letras}{Conjunto\+\_\+\+Letras} \&c)
+\begin{DoxyCompactList}\small\item\em Operador de extracción de flujo. Lee un conjunto de letras. \end{DoxyCompactList}\item 
+ostream \& \hyperlink{classConjunto__Letras_abec73eba28c0f57dc3255e8e53a01e07}{operator$<$$<$} (ostream \&out, const \hyperlink{classConjunto__Letras}{Conjunto\+\_\+\+Letras} \&c)
+\begin{DoxyCompactList}\small\item\em Operador de inserción de flujo. Imprime un conjunto de letras. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Descripción detallada}
+Una instancia c del T\+DA \hyperlink{classConjunto__Letras}{Conjunto\+\_\+\+Letras} es un contenedor set con datos de tipo \hyperlink{classLetra}{Letra}. 
+
+\subsection{Documentación de las funciones miembro}
+\mbox{\Hypertarget{classConjunto__Letras_aaefd083db74ab48e49f747dd47147e02}\label{classConjunto__Letras_aaefd083db74ab48e49f747dd47147e02}} 
+\index{Conjunto\+\_\+\+Letras@{Conjunto\+\_\+\+Letras}!begin@{begin}}
+\index{begin@{begin}!Conjunto\+\_\+\+Letras@{Conjunto\+\_\+\+Letras}}
+\subsubsection{\texorpdfstring{begin()}{begin()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \hyperlink{classConjunto__Letras_a2be8a16582f74bbe7561955083f02a52}{Conjunto\+\_\+\+Letras\+::iterator} Conjunto\+\_\+\+Letras\+::begin (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Método begin del iterador del conjunto de letras. 
+
+\begin{DoxyReturn}{Devuelve}
+Un iterador a la primera letra del conjunto 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classConjunto__Letras_a05e3def044414513abc7d6048de5f9ce}\label{classConjunto__Letras_a05e3def044414513abc7d6048de5f9ce}} 
+\index{Conjunto\+\_\+\+Letras@{Conjunto\+\_\+\+Letras}!begin@{begin}}
+\index{begin@{begin}!Conjunto\+\_\+\+Letras@{Conjunto\+\_\+\+Letras}}
+\subsubsection{\texorpdfstring{begin()}{begin()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \hyperlink{classConjunto__Letras_a66b252ad22ca76b522ef68fc7e6d09b1}{Conjunto\+\_\+\+Letras\+::const\+\_\+iterator} Conjunto\+\_\+\+Letras\+::begin (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Método begin del iterador constante del conjunto de letras. 
+
+\begin{DoxyReturn}{Devuelve}
+Un iterador constante a la primera letra del conjunto 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classConjunto__Letras_a2958b1e88656da47fb1d7e527dbb0853}\label{classConjunto__Letras_a2958b1e88656da47fb1d7e527dbb0853}} 
+\index{Conjunto\+\_\+\+Letras@{Conjunto\+\_\+\+Letras}!Calcular\+Puntuacion@{Calcular\+Puntuacion}}
+\index{Calcular\+Puntuacion@{Calcular\+Puntuacion}!Conjunto\+\_\+\+Letras@{Conjunto\+\_\+\+Letras}}
+\subsubsection{\texorpdfstring{Calcular\+Puntuacion()}{CalcularPuntuacion()}}
+{\footnotesize\ttfamily int Conjunto\+\_\+\+Letras\+::\+Calcular\+Puntuacion (\begin{DoxyParamCaption}\item[{const string}]{palabra }\end{DoxyParamCaption}) const}
+
+
+
+Método que calcula la puntuación de una palabra según los datos del conjunto de letras. 
+
+
+\begin{DoxyParams}{Parámetros}
+{\em palabra} & Palabra a la cuál se le calculará la puntuación \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Devuelve}
+La puntuación de la palabra 
+\end{DoxyReturn}
+\begin{DoxyPrecond}{Precondición}
+La palabra debe estar formada por las letras del conjunto 
+\end{DoxyPrecond}
+\mbox{\Hypertarget{classConjunto__Letras_ac004308c22155ad0f3a9f2a890f03727}\label{classConjunto__Letras_ac004308c22155ad0f3a9f2a890f03727}} 
+\index{Conjunto\+\_\+\+Letras@{Conjunto\+\_\+\+Letras}!Encuentra\+Letra@{Encuentra\+Letra}}
+\index{Encuentra\+Letra@{Encuentra\+Letra}!Conjunto\+\_\+\+Letras@{Conjunto\+\_\+\+Letras}}
+\subsubsection{\texorpdfstring{Encuentra\+Letra()}{EncuentraLetra()}}
+{\footnotesize\ttfamily \hyperlink{classLetra}{Letra} Conjunto\+\_\+\+Letras\+::\+Encuentra\+Letra (\begin{DoxyParamCaption}\item[{char}]{letra }\end{DoxyParamCaption}) const}
+
+
+
+Método que encuentra una letra en el conjunto de letras a partir de su carácter. 
+
+
+\begin{DoxyParams}{Parámetros}
+{\em letra} & Caracter de la letra a encontrar \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Devuelve}
+La letra 
+\end{DoxyReturn}
+\begin{DoxyPrecond}{Precondición}
+La letra debe estar en el conjunto 
+\end{DoxyPrecond}
+\mbox{\Hypertarget{classConjunto__Letras_a29f4eafc4df0b35a596bae262d53a7cb}\label{classConjunto__Letras_a29f4eafc4df0b35a596bae262d53a7cb}} 
+\index{Conjunto\+\_\+\+Letras@{Conjunto\+\_\+\+Letras}!end@{end}}
+\index{end@{end}!Conjunto\+\_\+\+Letras@{Conjunto\+\_\+\+Letras}}
+\subsubsection{\texorpdfstring{end()}{end()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \hyperlink{classConjunto__Letras_a2be8a16582f74bbe7561955083f02a52}{Conjunto\+\_\+\+Letras\+::iterator} Conjunto\+\_\+\+Letras\+::end (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Método end del iterador del conjunto de letras. 
+
+\begin{DoxyReturn}{Devuelve}
+Un iterador al final del contenedor set de letras (no a la última letra del conjunto) 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classConjunto__Letras_a1e84b5382d45645267eb8c50884679f1}\label{classConjunto__Letras_a1e84b5382d45645267eb8c50884679f1}} 
+\index{Conjunto\+\_\+\+Letras@{Conjunto\+\_\+\+Letras}!end@{end}}
+\index{end@{end}!Conjunto\+\_\+\+Letras@{Conjunto\+\_\+\+Letras}}
+\subsubsection{\texorpdfstring{end()}{end()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \hyperlink{classConjunto__Letras_a66b252ad22ca76b522ef68fc7e6d09b1}{Conjunto\+\_\+\+Letras\+::const\+\_\+iterator} Conjunto\+\_\+\+Letras\+::end (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Método end del iterador constante del conjunto de letras. 
+
+\begin{DoxyReturn}{Devuelve}
+Un iterador constante al final del contenedor set de letras (no a la última letra del conjunto) 
+\end{DoxyReturn}
+
+
+\subsection{Documentación de las funciones relacionadas y clases amigas}
+\mbox{\Hypertarget{classConjunto__Letras_abec73eba28c0f57dc3255e8e53a01e07}\label{classConjunto__Letras_abec73eba28c0f57dc3255e8e53a01e07}} 
+\index{Conjunto\+\_\+\+Letras@{Conjunto\+\_\+\+Letras}!operator$<$$<$@{operator$<$$<$}}
+\index{operator$<$$<$@{operator$<$$<$}!Conjunto\+\_\+\+Letras@{Conjunto\+\_\+\+Letras}}
+\subsubsection{\texorpdfstring{operator$<$$<$}{operator<<}}
+{\footnotesize\ttfamily ostream\& operator$<$$<$ (\begin{DoxyParamCaption}\item[{ostream \&}]{out,  }\item[{const \hyperlink{classConjunto__Letras}{Conjunto\+\_\+\+Letras} \&}]{c }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [friend]}}
+
+
+
+Operador de inserción de flujo. Imprime un conjunto de letras. 
+
+
+\begin{DoxyParams}{Parámetros}
+{\em out} & Flujo de salida \\
+\hline
+{\em c} & Conjunto a imprimir \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Devuelve}
+Una referencia al flujo out 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classConjunto__Letras_abf08384cdc42718a16ac3604ddd954cf}\label{classConjunto__Letras_abf08384cdc42718a16ac3604ddd954cf}} 
+\index{Conjunto\+\_\+\+Letras@{Conjunto\+\_\+\+Letras}!operator$>$$>$@{operator$>$$>$}}
+\index{operator$>$$>$@{operator$>$$>$}!Conjunto\+\_\+\+Letras@{Conjunto\+\_\+\+Letras}}
+\subsubsection{\texorpdfstring{operator$>$$>$}{operator>>}}
+{\footnotesize\ttfamily istream\& operator$>$$>$ (\begin{DoxyParamCaption}\item[{istream \&}]{in,  }\item[{\hyperlink{classConjunto__Letras}{Conjunto\+\_\+\+Letras} \&}]{c }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [friend]}}
+
+
+
+Operador de extracción de flujo. Lee un conjunto de letras. 
+
+
+\begin{DoxyParams}{Parámetros}
+{\em in} & Flujo de entrada \\
+\hline
+{\em c} & Conjunto a leer \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Devuelve}
+Una referencia al flujo in 
+\end{DoxyReturn}
+
+
+\subsection{Documentación de los datos miembro}
+\mbox{\Hypertarget{classConjunto__Letras_a9b9b3e1c3fd227d0fe961769f5e05894}\label{classConjunto__Letras_a9b9b3e1c3fd227d0fe961769f5e05894}} 
+\index{Conjunto\+\_\+\+Letras@{Conjunto\+\_\+\+Letras}!conjunto@{conjunto}}
+\index{conjunto@{conjunto}!Conjunto\+\_\+\+Letras@{Conjunto\+\_\+\+Letras}}
+\subsubsection{\texorpdfstring{conjunto}{conjunto}}
+{\footnotesize\ttfamily set$<$\hyperlink{classLetra}{Letra}$>$ Conjunto\+\_\+\+Letras\+::conjunto\hspace{0.3cm}{\ttfamily [private]}}
+
+Conjunto de letras 
+
+La documentación para esta clase fue generada a partir del siguiente fichero\+:\begin{DoxyCompactItemize}
+\item 
+include/\hyperlink{Conjunto__Letras_8h}{Conjunto\+\_\+\+Letras.\+h}\end{DoxyCompactItemize}

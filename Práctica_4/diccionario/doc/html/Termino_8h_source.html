@@ -1,0 +1,82 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.13"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>DICCIONARIO CON STL: Fichero Fuente include/Termino.h</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">DICCIONARIO CON STL
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Generado por Doxygen 1.8.13 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'Buscar');
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+$(function() {
+  initMenu('',true,false,'search.php','Buscar');
+  $(document).ready(function() { init_search(); });
+});
+</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_d44c64559bbebec7f509842c48db8b23.html">include</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle">
+<div class="title">Termino.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="Termino_8h.html">Ir a la documentación de este archivo.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;</div><div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="preprocessor">#ifndef TERMINO</span></div><div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="preprocessor">#define TERMINO</span></div><div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;</div><div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="preprocessor">#include &lt;iostream&gt;</span></div><div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="preprocessor">#include &lt;vector&gt;</span></div><div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="preprocessor">#include &lt;utility&gt;</span></div><div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="preprocessor">#include &lt;iterator&gt;</span></div><div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="preprocessor">#include &lt;fstream&gt;</span></div><div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="preprocessor">#include &lt;string&gt;</span></div><div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;</div><div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;<span class="keyword">using namespace </span><a class="code" href="namespacestd.html">std</a>;</div><div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;</div><div class="line"><a name="l00023"></a><span class="lineno"><a class="line" href="classTermino.html">   23</a></span>&#160;<span class="keyword">class </span><a class="code" href="classTermino.html">Termino</a>{</div><div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;<span class="keyword">private</span>:</div><div class="line"><a name="l00035"></a><span class="lineno"><a class="line" href="classTermino.html#a5656fe283f6e949ec67d6231f7154a3d">   35</a></span>&#160;    pair&lt;string,vector&lt;string&gt;&gt; <a class="code" href="classTermino.html#a5656fe283f6e949ec67d6231f7154a3d">termino</a>; </div><div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;<span class="keyword">public</span>:</div><div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;    <a class="code" href="classTermino.html">Termino</a>();</div><div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;    <a class="code" href="classTermino.html">Termino</a>(<span class="keywordtype">string</span> palabra, vector&lt;string&gt; defs);</div><div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;    <a class="code" href="classTermino.html">Termino</a>(<span class="keyword">const</span> <a class="code" href="classTermino.html">Termino</a> &amp; otro);</div><div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;    <span class="keywordtype">string</span> GetPalabra() <span class="keyword">const</span>;</div><div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;    vector&lt;string&gt; GetDefiniciones() <span class="keyword">const</span>;</div><div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;    <span class="keywordtype">int</span> GetNumeroDefiniciones() <span class="keyword">const</span>;</div><div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;    <span class="keywordtype">void</span> SetPalabra(<span class="keywordtype">string</span> palabra);</div><div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;    <span class="keywordtype">void</span> SetDefiniciones(vector&lt;string&gt; definiciones);</div><div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;    <span class="keywordtype">void</span> AniadeDefinicion(<span class="keywordtype">string</span> def);</div><div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;</div><div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;    <a class="code" href="classTermino.html">Termino</a> &amp; operator=(<span class="keyword">const</span> <a class="code" href="classTermino.html">Termino</a> &amp; otro);</div><div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;    <span class="keywordtype">bool</span> operator==(<span class="keyword">const</span> <a class="code" href="classTermino.html">Termino</a> &amp; t) <span class="keyword">const</span>;</div><div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;    <span class="keywordtype">bool</span> operator!=(<span class="keyword">const</span> <a class="code" href="classTermino.html">Termino</a> &amp; t) <span class="keyword">const</span>;</div><div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;    <span class="keywordtype">bool</span> operator&lt;(<span class="keyword">const</span> <a class="code" href="classTermino.html">Termino</a> &amp; t) <span class="keyword">const</span>;</div><div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;    <span class="keywordtype">bool</span> operator&gt;(<span class="keyword">const</span> <a class="code" href="classTermino.html">Termino</a> &amp; t) <span class="keyword">const</span>;</div><div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;    <span class="keyword">friend</span> istream &amp; operator&gt;&gt;(istream &amp; in, <a class="code" href="classTermino.html">Termino</a> &amp; t);</div><div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160;    <span class="keyword">friend</span> ostream &amp; operator&lt;&lt;(ostream &amp; out, <span class="keyword">const</span> <a class="code" href="classTermino.html">Termino</a> &amp; t);</div><div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160;</div><div class="line"><a name="l00135"></a><span class="lineno"><a class="line" href="classTermino.html#a47bf17fd54656f315aa9257b4372e875">  135</a></span>&#160;    <span class="keyword">typedef</span> vector&lt;string&gt;::iterator <a class="code" href="classTermino.html#a47bf17fd54656f315aa9257b4372e875">iterator</a>;</div><div class="line"><a name="l00139"></a><span class="lineno"><a class="line" href="classTermino.html#a0c8a38779eb1a65b8fe9422b430895c9">  139</a></span>&#160;    <span class="keyword">typedef</span> vector&lt;string&gt;::const_iterator <a class="code" href="classTermino.html#a0c8a38779eb1a65b8fe9422b430895c9">const_iterator</a>;</div><div class="line"><a name="l00144"></a><span class="lineno">  144</span>&#160;    <a class="code" href="classTermino.html#a47bf17fd54656f315aa9257b4372e875">Termino::iterator</a> begin();</div><div class="line"><a name="l00149"></a><span class="lineno">  149</span>&#160;    <a class="code" href="classTermino.html#a0c8a38779eb1a65b8fe9422b430895c9">Termino::const_iterator</a> begin() <span class="keyword">const</span>;</div><div class="line"><a name="l00154"></a><span class="lineno">  154</span>&#160;    <a class="code" href="classTermino.html#a47bf17fd54656f315aa9257b4372e875">Termino::iterator</a> end();</div><div class="line"><a name="l00159"></a><span class="lineno">  159</span>&#160;    <a class="code" href="classTermino.html#a0c8a38779eb1a65b8fe9422b430895c9">Termino::const_iterator</a> end() <span class="keyword">const</span>;</div><div class="line"><a name="l00160"></a><span class="lineno">  160</span>&#160;};</div><div class="line"><a name="l00161"></a><span class="lineno">  161</span>&#160;</div><div class="line"><a name="l00162"></a><span class="lineno">  162</span>&#160;<span class="preprocessor">#endif</span></div><div class="ttc" id="classTermino_html_a47bf17fd54656f315aa9257b4372e875"><div class="ttname"><a href="classTermino.html#a47bf17fd54656f315aa9257b4372e875">Termino::iterator</a></div><div class="ttdeci">vector&lt; string &gt;::iterator iterator</div><div class="ttdoc">Iterador del término (itera entre las definiciones) </div><div class="ttdef"><b>Definition:</b> Termino.h:135</div></div>
+<div class="ttc" id="namespacestd_html"><div class="ttname"><a href="namespacestd.html">std</a></div></div>
+<div class="ttc" id="classTermino_html"><div class="ttname"><a href="classTermino.html">Termino</a></div><div class="ttdoc">Una instancia t del TDA Termino es un objeto compuesto por una pareja (pair), cuyo primer campo es un...</div><div class="ttdef"><b>Definition:</b> Termino.h:23</div></div>
+<div class="ttc" id="classTermino_html_a0c8a38779eb1a65b8fe9422b430895c9"><div class="ttname"><a href="classTermino.html#a0c8a38779eb1a65b8fe9422b430895c9">Termino::const_iterator</a></div><div class="ttdeci">vector&lt; string &gt;::const_iterator const_iterator</div><div class="ttdoc">Iterador constante del término (itera entre las definiciones) </div><div class="ttdef"><b>Definition:</b> Termino.h:139</div></div>
+<div class="ttc" id="classTermino_html_a5656fe283f6e949ec67d6231f7154a3d"><div class="ttname"><a href="classTermino.html#a5656fe283f6e949ec67d6231f7154a3d">Termino::termino</a></div><div class="ttdeci">pair&lt; string, vector&lt; string &gt; &gt; termino</div><div class="ttdef"><b>Definition:</b> Termino.h:35</div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Generado por &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.13
+</small></address>
+</body>
+</html>

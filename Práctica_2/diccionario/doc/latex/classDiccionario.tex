@@ -1,0 +1,300 @@
+\hypertarget{classDiccionario}{}\section{Referencia de la Clase Diccionario}
+\label{classDiccionario}\index{Diccionario@{Diccionario}}
+
+
+Una instancia d del T\+DA \mbox{\hyperlink{classDiccionario}{Diccionario}} es un objeto que consta de una lista de objetos de la clase \mbox{\hyperlink{classTermino}{Termino}}.  
+
+
+
+
+{\ttfamily \#include $<$Diccionario.\+h$>$}
+
+\subsection*{Métodos públicos}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classDiccionario_aa0a2191ec706b256c35b5229cc197b15}\label{classDiccionario_aa0a2191ec706b256c35b5229cc197b15}} 
+\mbox{\hyperlink{classDiccionario_aa0a2191ec706b256c35b5229cc197b15}{Diccionario}} ()
+\begin{DoxyCompactList}\small\item\em Constructor por defecto. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classDiccionario_a3ca2e015f849faf2ee654d3be8bf69a2}{Diccionario}} (\mbox{\hyperlink{classLista}{Lista}}$<$ \mbox{\hyperlink{classTermino}{Termino}} $>$ tnos)
+\begin{DoxyCompactList}\small\item\em Constructor con un parámetro. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classDiccionario_a5f79e840a08666f29b527eb78be167e0}{Diccionario}} (const \mbox{\hyperlink{classDiccionario}{Diccionario}} \&otro)
+\begin{DoxyCompactList}\small\item\em Constructor de copia. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classDiccionario}{Diccionario}} \& \mbox{\hyperlink{classDiccionario_aa3c1919f74aab0483e3a484f0a708e07}{operator=}} (const \mbox{\hyperlink{classDiccionario}{Diccionario}} \&d)
+\begin{DoxyCompactList}\small\item\em Operador de asignación. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classVector__Dinamico}{Vector\+\_\+\+Dinamico}}$<$ string $>$ \mbox{\hyperlink{classDiccionario_a005029e0a1e8b28dcb504e524d25d57e}{Get\+Definiciones}} (\mbox{\hyperlink{classTermino}{Termino}} t) const
+\begin{DoxyCompactList}\small\item\em Consultor de las definiciones de un término. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classLista}{Lista}}$<$ \mbox{\hyperlink{classTermino}{Termino}} $>$ \mbox{\hyperlink{classDiccionario_a4b04ecb76099d4217e5bb98ba6b28b70}{Get\+Terminos}} () const
+\begin{DoxyCompactList}\small\item\em Consultor de términos del \mbox{\hyperlink{classDiccionario}{Diccionario}}. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{classDiccionario_a52ee9ad6a4b58befe9c3603e405cb360}{Get\+Numero\+Terminos}} () const
+\begin{DoxyCompactList}\small\item\em Consultor del número de términos del \mbox{\hyperlink{classDiccionario}{Diccionario}}. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classDiccionario_ac5b159cfde287d6964be059380a94a88}{Aniade\+Termino}} (\mbox{\hyperlink{classTermino}{Termino}} t)
+\begin{DoxyCompactList}\small\item\em Modificador que añade un nuevo \mbox{\hyperlink{classTermino}{Termino}} al \mbox{\hyperlink{classDiccionario}{Diccionario}}. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classDiccionario_a30f3ba501df6db597f87ca6bd37f069e}{Elimina\+Termino}} (\mbox{\hyperlink{classTermino}{Termino}} t)
+\begin{DoxyCompactList}\small\item\em Modificador que elimina un \mbox{\hyperlink{classTermino}{Termino}} del \mbox{\hyperlink{classDiccionario}{Diccionario}}. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classDiccionario}{Diccionario}} \mbox{\hyperlink{classDiccionario_a29730154b15bac2457f116b354635fae}{Intervalo}} (char caracter\+\_\+inicio, char caracter\+\_\+fin)
+\begin{DoxyCompactList}\small\item\em Construye un subdiccionario de términos comprendidos entre 2 caracteres. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classDiccionario}{Diccionario}} \mbox{\hyperlink{classDiccionario_a93ebea1ecbe24d1f54a3e75223f90fbf}{Palabra\+Clave}} (string palabra)
+\begin{DoxyCompactList}\small\item\em Construye un subdiccionario con los términos que contengan la palabra pasada como argumento en alguna de sus definiciones. Sólo serán incluidas las definiciones que la contengan. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classDiccionario_abbd34340d309f6217e52d647b3d40b1c}{Recuento\+Definiciones}} (int \&total\+\_\+definiciones, int \&max\+\_\+defs\+\_\+palabra, float \&promedio\+\_\+defs)
+\begin{DoxyCompactList}\small\item\em Hace diversos cálculos que tienen que ver con las definiciones de los términos del \mbox{\hyperlink{classDiccionario}{Diccionario}}. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Atributos privados}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classLista}{Lista}}$<$ \mbox{\hyperlink{classTermino}{Termino}} $>$ \mbox{\hyperlink{classDiccionario_a0e5b96246ec9ebd50c5e9290cd7f28a8}{terminos}}
+\end{DoxyCompactItemize}
+\subsection*{Amigas}
+\begin{DoxyCompactItemize}
+\item 
+istream \& \mbox{\hyperlink{classDiccionario_acf72932a86e98d33aef771dde204a44d}{operator$>$$>$}} (istream \&in, \mbox{\hyperlink{classDiccionario}{Diccionario}} \&d)
+\begin{DoxyCompactList}\small\item\em Operador de extracción de flujo. Lee un diccionario. \end{DoxyCompactList}\item 
+ostream \& \mbox{\hyperlink{classDiccionario_a516b789839a40eb659c4e12c3e0c2b14}{operator$<$$<$}} (ostream \&out, \mbox{\hyperlink{classDiccionario}{Diccionario}} \&d)
+\begin{DoxyCompactList}\small\item\em Operador de inserción de flujo. Imprime un diccionario. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Descripción detallada}
+Una instancia d del T\+DA \mbox{\hyperlink{classDiccionario}{Diccionario}} es un objeto que consta de una lista de objetos de la clase \mbox{\hyperlink{classTermino}{Termino}}. 
+
+\subsection{Documentación del constructor y destructor}
+\mbox{\Hypertarget{classDiccionario_a3ca2e015f849faf2ee654d3be8bf69a2}\label{classDiccionario_a3ca2e015f849faf2ee654d3be8bf69a2}} 
+\index{Diccionario@{Diccionario}!Diccionario@{Diccionario}}
+\index{Diccionario@{Diccionario}!Diccionario@{Diccionario}}
+\subsubsection{\texorpdfstring{Diccionario()}{Diccionario()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily Diccionario\+::\+Diccionario (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classLista}{Lista}}$<$ \mbox{\hyperlink{classTermino}{Termino}} $>$}]{tnos }\end{DoxyParamCaption})}
+
+
+
+Constructor con un parámetro. 
+
+
+\begin{DoxyParams}{Parámetros}
+{\em tnos} & \mbox{\hyperlink{classLista}{Lista}} de términos del diccionario \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classDiccionario_a5f79e840a08666f29b527eb78be167e0}\label{classDiccionario_a5f79e840a08666f29b527eb78be167e0}} 
+\index{Diccionario@{Diccionario}!Diccionario@{Diccionario}}
+\index{Diccionario@{Diccionario}!Diccionario@{Diccionario}}
+\subsubsection{\texorpdfstring{Diccionario()}{Diccionario()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily Diccionario\+::\+Diccionario (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classDiccionario}{Diccionario}} \&}]{otro }\end{DoxyParamCaption})}
+
+
+
+Constructor de copia. 
+
+
+\begin{DoxyParams}{Parámetros}
+{\em otro} & \mbox{\hyperlink{classDiccionario}{Diccionario}} que se va a copiar en this \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Documentación de las funciones miembro}
+\mbox{\Hypertarget{classDiccionario_ac5b159cfde287d6964be059380a94a88}\label{classDiccionario_ac5b159cfde287d6964be059380a94a88}} 
+\index{Diccionario@{Diccionario}!AniadeTermino@{AniadeTermino}}
+\index{AniadeTermino@{AniadeTermino}!Diccionario@{Diccionario}}
+\subsubsection{\texorpdfstring{AniadeTermino()}{AniadeTermino()}}
+{\footnotesize\ttfamily void Diccionario\+::\+Aniade\+Termino (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classTermino}{Termino}}}]{t }\end{DoxyParamCaption})}
+
+
+
+Modificador que añade un nuevo \mbox{\hyperlink{classTermino}{Termino}} al \mbox{\hyperlink{classDiccionario}{Diccionario}}. 
+
+
+\begin{DoxyParams}{Parámetros}
+{\em t} & \mbox{\hyperlink{classTermino}{Termino}} a añadir \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classDiccionario_a30f3ba501df6db597f87ca6bd37f069e}\label{classDiccionario_a30f3ba501df6db597f87ca6bd37f069e}} 
+\index{Diccionario@{Diccionario}!EliminaTermino@{EliminaTermino}}
+\index{EliminaTermino@{EliminaTermino}!Diccionario@{Diccionario}}
+\subsubsection{\texorpdfstring{EliminaTermino()}{EliminaTermino()}}
+{\footnotesize\ttfamily void Diccionario\+::\+Elimina\+Termino (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classTermino}{Termino}}}]{t }\end{DoxyParamCaption})}
+
+
+
+Modificador que elimina un \mbox{\hyperlink{classTermino}{Termino}} del \mbox{\hyperlink{classDiccionario}{Diccionario}}. 
+
+
+\begin{DoxyParams}{Parámetros}
+{\em t} & \mbox{\hyperlink{classTermino}{Termino}} a eliminar \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classDiccionario_a005029e0a1e8b28dcb504e524d25d57e}\label{classDiccionario_a005029e0a1e8b28dcb504e524d25d57e}} 
+\index{Diccionario@{Diccionario}!GetDefiniciones@{GetDefiniciones}}
+\index{GetDefiniciones@{GetDefiniciones}!Diccionario@{Diccionario}}
+\subsubsection{\texorpdfstring{GetDefiniciones()}{GetDefiniciones()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classVector__Dinamico}{Vector\+\_\+\+Dinamico}}$<$ string $>$ Diccionario\+::\+Get\+Definiciones (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classTermino}{Termino}}}]{t }\end{DoxyParamCaption}) const}
+
+
+
+Consultor de las definiciones de un término. 
+
+
+\begin{DoxyParams}{Parámetros}
+{\em t} & \mbox{\hyperlink{classTermino}{Termino}} del cuál se quiere consultar las definiciones \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Devuelve}
+\mbox{\hyperlink{classVector__Dinamico}{Vector\+\_\+\+Dinamico}} de las definiciones del \mbox{\hyperlink{classTermino}{Termino}} 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classDiccionario_a52ee9ad6a4b58befe9c3603e405cb360}\label{classDiccionario_a52ee9ad6a4b58befe9c3603e405cb360}} 
+\index{Diccionario@{Diccionario}!GetNumeroTerminos@{GetNumeroTerminos}}
+\index{GetNumeroTerminos@{GetNumeroTerminos}!Diccionario@{Diccionario}}
+\subsubsection{\texorpdfstring{GetNumeroTerminos()}{GetNumeroTerminos()}}
+{\footnotesize\ttfamily int Diccionario\+::\+Get\+Numero\+Terminos (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Consultor del número de términos del \mbox{\hyperlink{classDiccionario}{Diccionario}}. 
+
+\begin{DoxyReturn}{Devuelve}
+Número de términos del \mbox{\hyperlink{classDiccionario}{Diccionario}} 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classDiccionario_a4b04ecb76099d4217e5bb98ba6b28b70}\label{classDiccionario_a4b04ecb76099d4217e5bb98ba6b28b70}} 
+\index{Diccionario@{Diccionario}!GetTerminos@{GetTerminos}}
+\index{GetTerminos@{GetTerminos}!Diccionario@{Diccionario}}
+\subsubsection{\texorpdfstring{GetTerminos()}{GetTerminos()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classLista}{Lista}}$<$ \mbox{\hyperlink{classTermino}{Termino}} $>$ Diccionario\+::\+Get\+Terminos (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Consultor de términos del \mbox{\hyperlink{classDiccionario}{Diccionario}}. 
+
+\begin{DoxyReturn}{Devuelve}
+\mbox{\hyperlink{classLista}{Lista}} de términos del \mbox{\hyperlink{classDiccionario}{Diccionario}} 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classDiccionario_a29730154b15bac2457f116b354635fae}\label{classDiccionario_a29730154b15bac2457f116b354635fae}} 
+\index{Diccionario@{Diccionario}!Intervalo@{Intervalo}}
+\index{Intervalo@{Intervalo}!Diccionario@{Diccionario}}
+\subsubsection{\texorpdfstring{Intervalo()}{Intervalo()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classDiccionario}{Diccionario}} Diccionario\+::\+Intervalo (\begin{DoxyParamCaption}\item[{char}]{caracter\+\_\+inicio,  }\item[{char}]{caracter\+\_\+fin }\end{DoxyParamCaption})}
+
+
+
+Construye un subdiccionario de términos comprendidos entre 2 caracteres. 
+
+
+\begin{DoxyParams}{Parámetros}
+{\em caracter\+\_\+inicio} & Primer caracter del subdiccionario \\
+\hline
+{\em caracter\+\_\+fin} & Último caracter del diccionario. También están icluidos los términos cuyas palabras empiecen por este caracter \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Devuelve}
+El subdiccionario comprendido entre los caracteres 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classDiccionario_aa3c1919f74aab0483e3a484f0a708e07}\label{classDiccionario_aa3c1919f74aab0483e3a484f0a708e07}} 
+\index{Diccionario@{Diccionario}!operator=@{operator=}}
+\index{operator=@{operator=}!Diccionario@{Diccionario}}
+\subsubsection{\texorpdfstring{operator=()}{operator=()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classDiccionario}{Diccionario}} \& Diccionario\+::operator= (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classDiccionario}{Diccionario}} \&}]{d }\end{DoxyParamCaption})}
+
+
+
+Operador de asignación. 
+
+
+\begin{DoxyParams}{Parámetros}
+{\em d} & \mbox{\hyperlink{classDiccionario}{Diccionario}} a asignar \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Devuelve}
+Una referencia a $\ast$this 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classDiccionario_a93ebea1ecbe24d1f54a3e75223f90fbf}\label{classDiccionario_a93ebea1ecbe24d1f54a3e75223f90fbf}} 
+\index{Diccionario@{Diccionario}!PalabraClave@{PalabraClave}}
+\index{PalabraClave@{PalabraClave}!Diccionario@{Diccionario}}
+\subsubsection{\texorpdfstring{PalabraClave()}{PalabraClave()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classDiccionario}{Diccionario}} Diccionario\+::\+Palabra\+Clave (\begin{DoxyParamCaption}\item[{string}]{palabra }\end{DoxyParamCaption})}
+
+
+
+Construye un subdiccionario con los términos que contengan la palabra pasada como argumento en alguna de sus definiciones. Sólo serán incluidas las definiciones que la contengan. 
+
+
+\begin{DoxyParams}{Parámetros}
+{\em palabra} & Palabra que filtrará los términos que formarán parte del subdiccionario \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Devuelve}
+El subdiccionario con los términos cuyas definiciones contengan la palabra 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classDiccionario_abbd34340d309f6217e52d647b3d40b1c}\label{classDiccionario_abbd34340d309f6217e52d647b3d40b1c}} 
+\index{Diccionario@{Diccionario}!RecuentoDefiniciones@{RecuentoDefiniciones}}
+\index{RecuentoDefiniciones@{RecuentoDefiniciones}!Diccionario@{Diccionario}}
+\subsubsection{\texorpdfstring{RecuentoDefiniciones()}{RecuentoDefiniciones()}}
+{\footnotesize\ttfamily void Diccionario\+::\+Recuento\+Definiciones (\begin{DoxyParamCaption}\item[{int \&}]{total\+\_\+definiciones,  }\item[{int \&}]{max\+\_\+defs\+\_\+palabra,  }\item[{float \&}]{promedio\+\_\+defs }\end{DoxyParamCaption})}
+
+
+
+Hace diversos cálculos que tienen que ver con las definiciones de los términos del \mbox{\hyperlink{classDiccionario}{Diccionario}}. 
+
+
+\begin{DoxyParams}{Parámetros}
+{\em total\+\_\+definiciones} & (Referencia) Total de definiciones del diccionario \\
+\hline
+{\em max\+\_\+defs\+\_\+palabra} & (Referencia) Máximo de definiciones que contiene un \mbox{\hyperlink{classTermino}{Termino}} \\
+\hline
+{\em promedio\+\_\+defs} & (Referencia) Promedio de definiciones de un \mbox{\hyperlink{classTermino}{Termino}} \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Devuelve}
+(Por referencia) Los parámetros mencionados anteriormente, pero con los valores correctos 
+\end{DoxyReturn}
+
+
+\subsection{Documentación de las funciones relacionadas y clases amigas}
+\mbox{\Hypertarget{classDiccionario_a516b789839a40eb659c4e12c3e0c2b14}\label{classDiccionario_a516b789839a40eb659c4e12c3e0c2b14}} 
+\index{Diccionario@{Diccionario}!operator$<$$<$@{operator$<$$<$}}
+\index{operator$<$$<$@{operator$<$$<$}!Diccionario@{Diccionario}}
+\subsubsection{\texorpdfstring{operator$<$$<$}{operator<<}}
+{\footnotesize\ttfamily ostream\& operator$<$$<$ (\begin{DoxyParamCaption}\item[{ostream \&}]{out,  }\item[{\mbox{\hyperlink{classDiccionario}{Diccionario}} \&}]{d }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [friend]}}
+
+
+
+Operador de inserción de flujo. Imprime un diccionario. 
+
+
+\begin{DoxyParams}{Parámetros}
+{\em out} & Flujo de salida \\
+\hline
+{\em d} & \mbox{\hyperlink{classDiccionario}{Diccionario}} a imprimir \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Devuelve}
+Una referencia al flujo out 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classDiccionario_acf72932a86e98d33aef771dde204a44d}\label{classDiccionario_acf72932a86e98d33aef771dde204a44d}} 
+\index{Diccionario@{Diccionario}!operator$>$$>$@{operator$>$$>$}}
+\index{operator$>$$>$@{operator$>$$>$}!Diccionario@{Diccionario}}
+\subsubsection{\texorpdfstring{operator$>$$>$}{operator>>}}
+{\footnotesize\ttfamily istream\& operator$>$$>$ (\begin{DoxyParamCaption}\item[{istream \&}]{in,  }\item[{\mbox{\hyperlink{classDiccionario}{Diccionario}} \&}]{d }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [friend]}}
+
+
+
+Operador de extracción de flujo. Lee un diccionario. 
+
+
+\begin{DoxyParams}{Parámetros}
+{\em in} & Flujo de entrada \\
+\hline
+{\em d} & \mbox{\hyperlink{classDiccionario}{Diccionario}} a leer \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Devuelve}
+Una referencia al flujo in 
+\end{DoxyReturn}
+
+
+\subsection{Documentación de los datos miembro}
+\mbox{\Hypertarget{classDiccionario_a0e5b96246ec9ebd50c5e9290cd7f28a8}\label{classDiccionario_a0e5b96246ec9ebd50c5e9290cd7f28a8}} 
+\index{Diccionario@{Diccionario}!terminos@{terminos}}
+\index{terminos@{terminos}!Diccionario@{Diccionario}}
+\subsubsection{\texorpdfstring{terminos}{terminos}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classLista}{Lista}}$<$\mbox{\hyperlink{classTermino}{Termino}}$>$ Diccionario\+::terminos\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\hyperlink{classLista}{Lista}} de términos del diccionario 
+
+La documentación para esta clase fue generada a partir de los siguientes ficheros\+:\begin{DoxyCompactItemize}
+\item 
+include/\mbox{\hyperlink{Diccionario_8h}{Diccionario.\+h}}\item 
+src/Diccionario.\+cpp\end{DoxyCompactItemize}

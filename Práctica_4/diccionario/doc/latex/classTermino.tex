@@ -1,0 +1,396 @@
+\hypertarget{classTermino}{}\section{Referencia de la Clase Termino}
+\label{classTermino}\index{Termino@{Termino}}
+
+
+Una instancia t del T\+DA \hyperlink{classTermino}{Termino} es un objeto compuesto por una pareja (pair), cuyo primer campo es un string que simboliza una palabra y cuyo segundo campo es un vector de string compuesto por definiciones.  
+
+
+
+
+{\ttfamily \#include $<$Termino.\+h$>$}
+
+\subsection*{Tipos públicos}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classTermino_a47bf17fd54656f315aa9257b4372e875}\label{classTermino_a47bf17fd54656f315aa9257b4372e875}} 
+typedef vector$<$ string $>$\+::\hyperlink{classTermino_a47bf17fd54656f315aa9257b4372e875}{iterator} \hyperlink{classTermino_a47bf17fd54656f315aa9257b4372e875}{iterator}
+\begin{DoxyCompactList}\small\item\em Iterador del término (itera entre las definiciones) \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classTermino_a0c8a38779eb1a65b8fe9422b430895c9}\label{classTermino_a0c8a38779eb1a65b8fe9422b430895c9}} 
+typedef vector$<$ string $>$\+::\hyperlink{classTermino_a0c8a38779eb1a65b8fe9422b430895c9}{const\+\_\+iterator} \hyperlink{classTermino_a0c8a38779eb1a65b8fe9422b430895c9}{const\+\_\+iterator}
+\begin{DoxyCompactList}\small\item\em Iterador constante del término (itera entre las definiciones) \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Métodos públicos}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classTermino_ac3b1425fec4d38d78c5d36cb5fe8e728}\label{classTermino_ac3b1425fec4d38d78c5d36cb5fe8e728}} 
+\hyperlink{classTermino_ac3b1425fec4d38d78c5d36cb5fe8e728}{Termino} ()
+\begin{DoxyCompactList}\small\item\em Constructor por defecto. \end{DoxyCompactList}\item 
+\hyperlink{classTermino_a9ec8e65752439d7f58be1a7ee7334e0b}{Termino} (string palabra, vector$<$ string $>$ defs)
+\begin{DoxyCompactList}\small\item\em Constructor con dos parámetros. \end{DoxyCompactList}\item 
+\hyperlink{classTermino_a5614ae8912f6aabd677762cc6d10f2c8}{Termino} (const \hyperlink{classTermino}{Termino} \&otro)
+\begin{DoxyCompactList}\small\item\em Constructor de copia. \end{DoxyCompactList}\item 
+string \hyperlink{classTermino_a9cff6f16a62ffa3c8c2c241a33cbd04d}{Get\+Palabra} () const
+\begin{DoxyCompactList}\small\item\em Consultor de la palabra del objeto. \end{DoxyCompactList}\item 
+vector$<$ string $>$ \hyperlink{classTermino_a11d0d5aa55842b440263fc2e0d24941f}{Get\+Definiciones} () const
+\begin{DoxyCompactList}\small\item\em Consultor de las definiciones del objeto. \end{DoxyCompactList}\item 
+int \hyperlink{classTermino_ad3aac507f0f33d89abf34db00f92606f}{Get\+Numero\+Definiciones} () const
+\begin{DoxyCompactList}\small\item\em Consultor del número de definiciones. \end{DoxyCompactList}\item 
+void \hyperlink{classTermino_a6d148c1d2aaaa5ebc40fc1eb6e34857a}{Set\+Palabra} (string palabra)
+\begin{DoxyCompactList}\small\item\em Modificador de la palabra. \end{DoxyCompactList}\item 
+void \hyperlink{classTermino_a2345118df3073c53c0722abb4b091da0}{Set\+Definiciones} (vector$<$ string $>$ definiciones)
+\begin{DoxyCompactList}\small\item\em Modificador de las definiciones. \end{DoxyCompactList}\item 
+void \hyperlink{classTermino_a93fed012290bc28881288cfd095c8500}{Aniade\+Definicion} (string def)
+\begin{DoxyCompactList}\small\item\em Añade una definición al término, conservando las anteriores. \end{DoxyCompactList}\item 
+\hyperlink{classTermino}{Termino} \& \hyperlink{classTermino_a57e30838c746677128101bae99df1366}{operator=} (const \hyperlink{classTermino}{Termino} \&otro)
+\begin{DoxyCompactList}\small\item\em Operador de asignación. \end{DoxyCompactList}\item 
+bool \hyperlink{classTermino_adf075fbce1b208a5214e9364e5f2520a}{operator==} (const \hyperlink{classTermino}{Termino} \&t) const
+\begin{DoxyCompactList}\small\item\em Operador ==. Compara dos términos para ver si son iguales. Dos términos son iguales si sus palabras son iguales. \end{DoxyCompactList}\item 
+bool \hyperlink{classTermino_a18fcc1cd64321afc8e17bb7ddaa9172a}{operator!=} (const \hyperlink{classTermino}{Termino} \&t) const
+\begin{DoxyCompactList}\small\item\em Operador !=. Compara dos terminos para ver si son distintos. Dos términos son distintos si sus palabras son distintas. \end{DoxyCompactList}\item 
+bool \hyperlink{classTermino_a2674fda8a9f8f9e40ba338953e3e94ae}{operator$<$} (const \hyperlink{classTermino}{Termino} \&t) const
+\begin{DoxyCompactList}\small\item\em Operador $<$. Comprueba si this es menor que t. Un término es menor que otro si va antes que él en el orden alfabético. \end{DoxyCompactList}\item 
+bool \hyperlink{classTermino_a72be5a52ffa4dbf55ecd6dfb6af12476}{operator$>$} (const \hyperlink{classTermino}{Termino} \&t) const
+\begin{DoxyCompactList}\small\item\em Operador $>$. Comprueba si this es mayor que t. Un término es mayor que otro si va después que él en el orden alfabético. \end{DoxyCompactList}\item 
+\hyperlink{classTermino_a47bf17fd54656f315aa9257b4372e875}{Termino\+::iterator} \hyperlink{classTermino_a7ff605c38c22fd1c16573ad2c2900247}{begin} ()
+\begin{DoxyCompactList}\small\item\em Método begin del iterador del término. \end{DoxyCompactList}\item 
+\hyperlink{classTermino_a0c8a38779eb1a65b8fe9422b430895c9}{Termino\+::const\+\_\+iterator} \hyperlink{classTermino_abf06215ba85528bc636f337103328345}{begin} () const
+\begin{DoxyCompactList}\small\item\em Método begin del iterador constante del término. \end{DoxyCompactList}\item 
+\hyperlink{classTermino_a47bf17fd54656f315aa9257b4372e875}{Termino\+::iterator} \hyperlink{classTermino_af23d49a79988f917c61969564002c162}{end} ()
+\begin{DoxyCompactList}\small\item\em Método end del iterador del término. \end{DoxyCompactList}\item 
+\hyperlink{classTermino_a0c8a38779eb1a65b8fe9422b430895c9}{Termino\+::const\+\_\+iterator} \hyperlink{classTermino_af14f79a17426160db9db162737e18b96}{end} () const
+\begin{DoxyCompactList}\small\item\em Método end del iterador constante del término. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Atributos privados}
+\begin{DoxyCompactItemize}
+\item 
+pair$<$ string, vector$<$ string $>$ $>$ \hyperlink{classTermino_a5656fe283f6e949ec67d6231f7154a3d}{termino}
+\end{DoxyCompactItemize}
+\subsection*{Amigas}
+\begin{DoxyCompactItemize}
+\item 
+istream \& \hyperlink{classTermino_a42f635c3609287dbbf2bd65d035fa7f8}{operator$>$$>$} (istream \&in, \hyperlink{classTermino}{Termino} \&t)
+\begin{DoxyCompactList}\small\item\em Operador de extracción de flujo. Lee un término. \end{DoxyCompactList}\item 
+ostream \& \hyperlink{classTermino_a3f023e4474dc0034666373694cfc08b8}{operator$<$$<$} (ostream \&out, const \hyperlink{classTermino}{Termino} \&t)
+\begin{DoxyCompactList}\small\item\em Operador de inserción de flujo. Imprime un término. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Descripción detallada}
+Una instancia t del T\+DA \hyperlink{classTermino}{Termino} es un objeto compuesto por una pareja (pair), cuyo primer campo es un string que simboliza una palabra y cuyo segundo campo es un vector de string compuesto por definiciones. 
+
+\subsection{Documentación del constructor y destructor}
+\mbox{\Hypertarget{classTermino_a9ec8e65752439d7f58be1a7ee7334e0b}\label{classTermino_a9ec8e65752439d7f58be1a7ee7334e0b}} 
+\index{Termino@{Termino}!Termino@{Termino}}
+\index{Termino@{Termino}!Termino@{Termino}}
+\subsubsection{\texorpdfstring{Termino()}{Termino()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily Termino\+::\+Termino (\begin{DoxyParamCaption}\item[{string}]{palabra,  }\item[{vector$<$ string $>$}]{defs }\end{DoxyParamCaption})}
+
+
+
+Constructor con dos parámetros. 
+
+
+\begin{DoxyParams}{Parámetros}
+{\em palabra} & Palabra del término \\
+\hline
+{\em defs} & Vector de definiciones del término \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classTermino_a5614ae8912f6aabd677762cc6d10f2c8}\label{classTermino_a5614ae8912f6aabd677762cc6d10f2c8}} 
+\index{Termino@{Termino}!Termino@{Termino}}
+\index{Termino@{Termino}!Termino@{Termino}}
+\subsubsection{\texorpdfstring{Termino()}{Termino()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily Termino\+::\+Termino (\begin{DoxyParamCaption}\item[{const \hyperlink{classTermino}{Termino} \&}]{otro }\end{DoxyParamCaption})}
+
+
+
+Constructor de copia. 
+
+
+\begin{DoxyParams}{Parámetros}
+{\em otro} & Término que se va a copiar en this \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Documentación de las funciones miembro}
+\mbox{\Hypertarget{classTermino_a93fed012290bc28881288cfd095c8500}\label{classTermino_a93fed012290bc28881288cfd095c8500}} 
+\index{Termino@{Termino}!Aniade\+Definicion@{Aniade\+Definicion}}
+\index{Aniade\+Definicion@{Aniade\+Definicion}!Termino@{Termino}}
+\subsubsection{\texorpdfstring{Aniade\+Definicion()}{AniadeDefinicion()}}
+{\footnotesize\ttfamily void Termino\+::\+Aniade\+Definicion (\begin{DoxyParamCaption}\item[{string}]{def }\end{DoxyParamCaption})}
+
+
+
+Añade una definición al término, conservando las anteriores. 
+
+
+\begin{DoxyParams}{Parámetros}
+{\em def} & Definición a añadir \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classTermino_a7ff605c38c22fd1c16573ad2c2900247}\label{classTermino_a7ff605c38c22fd1c16573ad2c2900247}} 
+\index{Termino@{Termino}!begin@{begin}}
+\index{begin@{begin}!Termino@{Termino}}
+\subsubsection{\texorpdfstring{begin()}{begin()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \hyperlink{classTermino_a47bf17fd54656f315aa9257b4372e875}{Termino\+::iterator} Termino\+::begin (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Método begin del iterador del término. 
+
+\begin{DoxyReturn}{Devuelve}
+Un iterador a la primera definición del término 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classTermino_abf06215ba85528bc636f337103328345}\label{classTermino_abf06215ba85528bc636f337103328345}} 
+\index{Termino@{Termino}!begin@{begin}}
+\index{begin@{begin}!Termino@{Termino}}
+\subsubsection{\texorpdfstring{begin()}{begin()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \hyperlink{classTermino_a0c8a38779eb1a65b8fe9422b430895c9}{Termino\+::const\+\_\+iterator} Termino\+::begin (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Método begin del iterador constante del término. 
+
+\begin{DoxyReturn}{Devuelve}
+un iterador constante a la primera definición del término 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classTermino_af23d49a79988f917c61969564002c162}\label{classTermino_af23d49a79988f917c61969564002c162}} 
+\index{Termino@{Termino}!end@{end}}
+\index{end@{end}!Termino@{Termino}}
+\subsubsection{\texorpdfstring{end()}{end()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \hyperlink{classTermino_a47bf17fd54656f315aa9257b4372e875}{Termino\+::iterator} Termino\+::end (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Método end del iterador del término. 
+
+\begin{DoxyReturn}{Devuelve}
+Un iterador al final del vector de definiciones (no la última definición) 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classTermino_af14f79a17426160db9db162737e18b96}\label{classTermino_af14f79a17426160db9db162737e18b96}} 
+\index{Termino@{Termino}!end@{end}}
+\index{end@{end}!Termino@{Termino}}
+\subsubsection{\texorpdfstring{end()}{end()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \hyperlink{classTermino_a0c8a38779eb1a65b8fe9422b430895c9}{Termino\+::const\+\_\+iterator} Termino\+::end (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Método end del iterador constante del término. 
+
+\begin{DoxyReturn}{Devuelve}
+Un iterador constante al final del vector de definiciones (no la última definición) 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classTermino_a11d0d5aa55842b440263fc2e0d24941f}\label{classTermino_a11d0d5aa55842b440263fc2e0d24941f}} 
+\index{Termino@{Termino}!Get\+Definiciones@{Get\+Definiciones}}
+\index{Get\+Definiciones@{Get\+Definiciones}!Termino@{Termino}}
+\subsubsection{\texorpdfstring{Get\+Definiciones()}{GetDefiniciones()}}
+{\footnotesize\ttfamily vector$<$string$>$ Termino\+::\+Get\+Definiciones (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Consultor de las definiciones del objeto. 
+
+\begin{DoxyReturn}{Devuelve}
+Un vector de string con las definiciones 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classTermino_ad3aac507f0f33d89abf34db00f92606f}\label{classTermino_ad3aac507f0f33d89abf34db00f92606f}} 
+\index{Termino@{Termino}!Get\+Numero\+Definiciones@{Get\+Numero\+Definiciones}}
+\index{Get\+Numero\+Definiciones@{Get\+Numero\+Definiciones}!Termino@{Termino}}
+\subsubsection{\texorpdfstring{Get\+Numero\+Definiciones()}{GetNumeroDefiniciones()}}
+{\footnotesize\ttfamily int Termino\+::\+Get\+Numero\+Definiciones (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Consultor del número de definiciones. 
+
+\begin{DoxyReturn}{Devuelve}
+Un entero que representa el número de definiciones del término 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classTermino_a9cff6f16a62ffa3c8c2c241a33cbd04d}\label{classTermino_a9cff6f16a62ffa3c8c2c241a33cbd04d}} 
+\index{Termino@{Termino}!Get\+Palabra@{Get\+Palabra}}
+\index{Get\+Palabra@{Get\+Palabra}!Termino@{Termino}}
+\subsubsection{\texorpdfstring{Get\+Palabra()}{GetPalabra()}}
+{\footnotesize\ttfamily string Termino\+::\+Get\+Palabra (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Consultor de la palabra del objeto. 
+
+\begin{DoxyReturn}{Devuelve}
+Un vector dinámico de string con las definiciones 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classTermino_a18fcc1cd64321afc8e17bb7ddaa9172a}\label{classTermino_a18fcc1cd64321afc8e17bb7ddaa9172a}} 
+\index{Termino@{Termino}!operator"!=@{operator"!=}}
+\index{operator"!=@{operator"!=}!Termino@{Termino}}
+\subsubsection{\texorpdfstring{operator"!=()}{operator!=()}}
+{\footnotesize\ttfamily bool Termino\+::operator!= (\begin{DoxyParamCaption}\item[{const \hyperlink{classTermino}{Termino} \&}]{t }\end{DoxyParamCaption}) const}
+
+
+
+Operador !=. Compara dos terminos para ver si son distintos. Dos términos son distintos si sus palabras son distintas. 
+
+
+\begin{DoxyParams}{Parámetros}
+{\em t} & Término con el que comparar \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Devuelve}
+True si this y t son distintos False si no lo son 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classTermino_a2674fda8a9f8f9e40ba338953e3e94ae}\label{classTermino_a2674fda8a9f8f9e40ba338953e3e94ae}} 
+\index{Termino@{Termino}!operator$<$@{operator$<$}}
+\index{operator$<$@{operator$<$}!Termino@{Termino}}
+\subsubsection{\texorpdfstring{operator$<$()}{operator<()}}
+{\footnotesize\ttfamily bool Termino\+::operator$<$ (\begin{DoxyParamCaption}\item[{const \hyperlink{classTermino}{Termino} \&}]{t }\end{DoxyParamCaption}) const}
+
+
+
+Operador $<$. Comprueba si this es menor que t. Un término es menor que otro si va antes que él en el orden alfabético. 
+
+
+\begin{DoxyParams}{Parámetros}
+{\em t} & Término con el que comparar \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Devuelve}
+True si this es mayor que t False si no lo es 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classTermino_a57e30838c746677128101bae99df1366}\label{classTermino_a57e30838c746677128101bae99df1366}} 
+\index{Termino@{Termino}!operator=@{operator=}}
+\index{operator=@{operator=}!Termino@{Termino}}
+\subsubsection{\texorpdfstring{operator=()}{operator=()}}
+{\footnotesize\ttfamily \hyperlink{classTermino}{Termino}\& Termino\+::operator= (\begin{DoxyParamCaption}\item[{const \hyperlink{classTermino}{Termino} \&}]{otro }\end{DoxyParamCaption})}
+
+
+
+Operador de asignación. 
+
+
+\begin{DoxyParams}{Parámetros}
+{\em otro} & Término a asignar \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Devuelve}
+Una referencia a this 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classTermino_adf075fbce1b208a5214e9364e5f2520a}\label{classTermino_adf075fbce1b208a5214e9364e5f2520a}} 
+\index{Termino@{Termino}!operator==@{operator==}}
+\index{operator==@{operator==}!Termino@{Termino}}
+\subsubsection{\texorpdfstring{operator==()}{operator==()}}
+{\footnotesize\ttfamily bool Termino\+::operator== (\begin{DoxyParamCaption}\item[{const \hyperlink{classTermino}{Termino} \&}]{t }\end{DoxyParamCaption}) const}
+
+
+
+Operador ==. Compara dos términos para ver si son iguales. Dos términos son iguales si sus palabras son iguales. 
+
+
+\begin{DoxyParams}{Parámetros}
+{\em t} & Término con el que comparar \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Devuelve}
+True si this y t son distintos False si no lo son 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classTermino_a72be5a52ffa4dbf55ecd6dfb6af12476}\label{classTermino_a72be5a52ffa4dbf55ecd6dfb6af12476}} 
+\index{Termino@{Termino}!operator$>$@{operator$>$}}
+\index{operator$>$@{operator$>$}!Termino@{Termino}}
+\subsubsection{\texorpdfstring{operator$>$()}{operator>()}}
+{\footnotesize\ttfamily bool Termino\+::operator$>$ (\begin{DoxyParamCaption}\item[{const \hyperlink{classTermino}{Termino} \&}]{t }\end{DoxyParamCaption}) const}
+
+
+
+Operador $>$. Comprueba si this es mayor que t. Un término es mayor que otro si va después que él en el orden alfabético. 
+
+
+\begin{DoxyParams}{Parámetros}
+{\em t} & Término con el que comparar \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Devuelve}
+True si this es mayor que t False si no lo es 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classTermino_a2345118df3073c53c0722abb4b091da0}\label{classTermino_a2345118df3073c53c0722abb4b091da0}} 
+\index{Termino@{Termino}!Set\+Definiciones@{Set\+Definiciones}}
+\index{Set\+Definiciones@{Set\+Definiciones}!Termino@{Termino}}
+\subsubsection{\texorpdfstring{Set\+Definiciones()}{SetDefiniciones()}}
+{\footnotesize\ttfamily void Termino\+::\+Set\+Definiciones (\begin{DoxyParamCaption}\item[{vector$<$ string $>$}]{definiciones }\end{DoxyParamCaption})}
+
+
+
+Modificador de las definiciones. 
+
+
+\begin{DoxyParams}{Parámetros}
+{\em definiciones} & Vector dinámico de string con las nuevas definiciones del objeto \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classTermino_a6d148c1d2aaaa5ebc40fc1eb6e34857a}\label{classTermino_a6d148c1d2aaaa5ebc40fc1eb6e34857a}} 
+\index{Termino@{Termino}!Set\+Palabra@{Set\+Palabra}}
+\index{Set\+Palabra@{Set\+Palabra}!Termino@{Termino}}
+\subsubsection{\texorpdfstring{Set\+Palabra()}{SetPalabra()}}
+{\footnotesize\ttfamily void Termino\+::\+Set\+Palabra (\begin{DoxyParamCaption}\item[{string}]{palabra }\end{DoxyParamCaption})}
+
+
+
+Modificador de la palabra. 
+
+
+\begin{DoxyParams}{Parámetros}
+{\em palabra} & Nueva palabra del objeto \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Documentación de las funciones relacionadas y clases amigas}
+\mbox{\Hypertarget{classTermino_a3f023e4474dc0034666373694cfc08b8}\label{classTermino_a3f023e4474dc0034666373694cfc08b8}} 
+\index{Termino@{Termino}!operator$<$$<$@{operator$<$$<$}}
+\index{operator$<$$<$@{operator$<$$<$}!Termino@{Termino}}
+\subsubsection{\texorpdfstring{operator$<$$<$}{operator<<}}
+{\footnotesize\ttfamily ostream\& operator$<$$<$ (\begin{DoxyParamCaption}\item[{ostream \&}]{out,  }\item[{const \hyperlink{classTermino}{Termino} \&}]{t }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [friend]}}
+
+
+
+Operador de inserción de flujo. Imprime un término. 
+
+
+\begin{DoxyParams}{Parámetros}
+{\em out} & Flujo de salida \\
+\hline
+{\em t} & Término a imprimir \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Devuelve}
+Una referencia al flujo out 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classTermino_a42f635c3609287dbbf2bd65d035fa7f8}\label{classTermino_a42f635c3609287dbbf2bd65d035fa7f8}} 
+\index{Termino@{Termino}!operator$>$$>$@{operator$>$$>$}}
+\index{operator$>$$>$@{operator$>$$>$}!Termino@{Termino}}
+\subsubsection{\texorpdfstring{operator$>$$>$}{operator>>}}
+{\footnotesize\ttfamily istream\& operator$>$$>$ (\begin{DoxyParamCaption}\item[{istream \&}]{in,  }\item[{\hyperlink{classTermino}{Termino} \&}]{t }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [friend]}}
+
+
+
+Operador de extracción de flujo. Lee un término. 
+
+
+\begin{DoxyParams}{Parámetros}
+{\em in} & Flujo de entrada \\
+\hline
+{\em t} & Término a leer \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Devuelve}
+Una referencia al flujo in 
+\end{DoxyReturn}
+
+
+\subsection{Documentación de los datos miembro}
+\mbox{\Hypertarget{classTermino_a5656fe283f6e949ec67d6231f7154a3d}\label{classTermino_a5656fe283f6e949ec67d6231f7154a3d}} 
+\index{Termino@{Termino}!termino@{termino}}
+\index{termino@{termino}!Termino@{Termino}}
+\subsubsection{\texorpdfstring{termino}{termino}}
+{\footnotesize\ttfamily pair$<$string,vector$<$string$>$ $>$ Termino\+::termino\hspace{0.3cm}{\ttfamily [private]}}
+
+Término\+: Pareja palabra/definiciones 
+
+La documentación para esta clase fue generada a partir del siguiente fichero\+:\begin{DoxyCompactItemize}
+\item 
+include/\hyperlink{Termino_8h}{Termino.\+h}\end{DoxyCompactItemize}

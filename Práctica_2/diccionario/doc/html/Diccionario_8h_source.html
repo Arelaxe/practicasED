@@ -1,0 +1,100 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.15"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>TDA_DICCIONARIO: Fichero Fuente include/Diccionario.h</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">TDA_DICCIONARIO
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Generado por Doxygen 1.8.15 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'Buscar');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','Buscar');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_d44c64559bbebec7f509842c48db8b23.html">include</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle">
+<div class="title">Diccionario.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="Diccionario_8h.html">Ir a la documentación de este archivo.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;</div><div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="preprocessor">#ifndef DICCIONARIO</span></div><div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="preprocessor">#define DICCIONARIO</span></div><div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;</div><div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="preprocessor">#include &lt;string&gt;</span></div><div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="Termino_8h.html">Termino.h</a>&quot;</span></div><div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="Lista_8h.html">Lista.h</a>&quot;</span></div><div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="Vector__Dinamico_8h.html">Vector_Dinamico.h</a>&quot;</span></div><div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;</div><div class="line"><a name="l00020"></a><span class="lineno"><a class="line" href="classDiccionario.html">   20</a></span>&#160;<span class="keyword">class </span><a class="code" href="classDiccionario.html">Diccionario</a>{</div><div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;<span class="keyword">private</span>:</div><div class="line"><a name="l00031"></a><span class="lineno"><a class="line" href="classDiccionario.html#a0e5b96246ec9ebd50c5e9290cd7f28a8">   31</a></span>&#160;    <a class="code" href="classLista.html">Lista&lt;Termino&gt;</a> <a class="code" href="classDiccionario.html#a0e5b96246ec9ebd50c5e9290cd7f28a8">terminos</a>; </div><div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;<span class="keyword">public</span>:</div><div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;    <a class="code" href="classDiccionario.html#aa0a2191ec706b256c35b5229cc197b15">Diccionario</a> ();</div><div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;    <a class="code" href="classDiccionario.html#aa0a2191ec706b256c35b5229cc197b15">Diccionario</a> (<a class="code" href="classLista.html">Lista&lt;Termino&gt;</a> tnos);</div><div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;    <a class="code" href="classDiccionario.html#aa0a2191ec706b256c35b5229cc197b15">Diccionario</a> (<span class="keyword">const</span> <a class="code" href="classDiccionario.html">Diccionario</a> &amp; otro);</div><div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;    <a class="code" href="classDiccionario.html">Diccionario</a> &amp; <a class="code" href="classDiccionario.html#aa3c1919f74aab0483e3a484f0a708e07">operator= </a>(<span class="keyword">const</span> <a class="code" href="classDiccionario.html">Diccionario</a> &amp; d);</div><div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;    <a class="code" href="classVector__Dinamico.html">Vector_Dinamico&lt;string&gt;</a> <a class="code" href="classDiccionario.html#a005029e0a1e8b28dcb504e524d25d57e">GetDefiniciones</a> (<a class="code" href="classTermino.html">Termino</a> t) <span class="keyword">const</span>;</div><div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;    <a class="code" href="classLista.html">Lista&lt;Termino&gt;</a> <a class="code" href="classDiccionario.html#a4b04ecb76099d4217e5bb98ba6b28b70">GetTerminos</a> () <span class="keyword">const</span>;</div><div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;    <span class="keywordtype">int</span> <a class="code" href="classDiccionario.html#a52ee9ad6a4b58befe9c3603e405cb360">GetNumeroTerminos</a> () <span class="keyword">const</span>;</div><div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classDiccionario.html#ac5b159cfde287d6964be059380a94a88">AniadeTermino</a> (<a class="code" href="classTermino.html">Termino</a> t);</div><div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classDiccionario.html#a30f3ba501df6db597f87ca6bd37f069e">EliminaTermino</a> (<a class="code" href="classTermino.html">Termino</a> t);</div><div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;    <span class="keyword">friend</span> istream &amp; <a class="code" href="classDiccionario.html#acf72932a86e98d33aef771dde204a44d">operator&gt;&gt; </a>(istream &amp; in, <a class="code" href="classDiccionario.html">Diccionario</a> &amp; d);</div><div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;    <span class="keyword">friend</span> ostream &amp; <a class="code" href="classDiccionario.html#a516b789839a40eb659c4e12c3e0c2b14">operator&lt;&lt; </a>(ostream &amp; out, <a class="code" href="classDiccionario.html">Diccionario</a> &amp; d);</div><div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;    <a class="code" href="classDiccionario.html">Diccionario</a> <a class="code" href="classDiccionario.html#a29730154b15bac2457f116b354635fae">Intervalo</a> (<span class="keywordtype">char</span> caracter_inicio, <span class="keywordtype">char</span> caracter_fin);</div><div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;    <a class="code" href="classDiccionario.html">Diccionario</a> <a class="code" href="classDiccionario.html#a93ebea1ecbe24d1f54a3e75223f90fbf">PalabraClave</a> (<span class="keywordtype">string</span> palabra);</div><div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classDiccionario.html#abbd34340d309f6217e52d647b3d40b1c">RecuentoDefiniciones</a> (<span class="keywordtype">int</span> &amp; total_definiciones, <span class="keywordtype">int</span> &amp; max_defs_palabra, <span class="keywordtype">float</span> &amp; promedio_defs);</div><div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;};</div><div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;</div><div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;<span class="preprocessor">#endif</span></div><div class="ttc" id="classVector__Dinamico_html"><div class="ttname"><a href="classVector__Dinamico.html">Vector_Dinamico&lt; string &gt;</a></div></div>
+<div class="ttc" id="classDiccionario_html_a4b04ecb76099d4217e5bb98ba6b28b70"><div class="ttname"><a href="classDiccionario.html#a4b04ecb76099d4217e5bb98ba6b28b70">Diccionario::GetTerminos</a></div><div class="ttdeci">Lista&lt; Termino &gt; GetTerminos() const</div><div class="ttdoc">Consultor de términos del Diccionario.</div><div class="ttdef"><b>Definition:</b> Diccionario.cpp:31</div></div>
+<div class="ttc" id="classDiccionario_html_a30f3ba501df6db597f87ca6bd37f069e"><div class="ttname"><a href="classDiccionario.html#a30f3ba501df6db597f87ca6bd37f069e">Diccionario::EliminaTermino</a></div><div class="ttdeci">void EliminaTermino(Termino t)</div><div class="ttdoc">Modificador que elimina un Termino del Diccionario.</div><div class="ttdef"><b>Definition:</b> Diccionario.cpp:55</div></div>
+<div class="ttc" id="classDiccionario_html_a0e5b96246ec9ebd50c5e9290cd7f28a8"><div class="ttname"><a href="classDiccionario.html#a0e5b96246ec9ebd50c5e9290cd7f28a8">Diccionario::terminos</a></div><div class="ttdeci">Lista&lt; Termino &gt; terminos</div><div class="ttdef"><b>Definition:</b> Diccionario.h:31</div></div>
+<div class="ttc" id="classDiccionario_html_a29730154b15bac2457f116b354635fae"><div class="ttname"><a href="classDiccionario.html#a29730154b15bac2457f116b354635fae">Diccionario::Intervalo</a></div><div class="ttdeci">Diccionario Intervalo(char caracter_inicio, char caracter_fin)</div><div class="ttdoc">Construye un subdiccionario de términos comprendidos entre 2 caracteres.</div><div class="ttdef"><b>Definition:</b> Diccionario.cpp:88</div></div>
+<div class="ttc" id="classDiccionario_html_a93ebea1ecbe24d1f54a3e75223f90fbf"><div class="ttname"><a href="classDiccionario.html#a93ebea1ecbe24d1f54a3e75223f90fbf">Diccionario::PalabraClave</a></div><div class="ttdeci">Diccionario PalabraClave(string palabra)</div><div class="ttdoc">Construye un subdiccionario con los términos que contengan la palabra pasada como argumento en alguna...</div><div class="ttdef"><b>Definition:</b> Diccionario.cpp:107</div></div>
+<div class="ttc" id="classDiccionario_html_ac5b159cfde287d6964be059380a94a88"><div class="ttname"><a href="classDiccionario.html#ac5b159cfde287d6964be059380a94a88">Diccionario::AniadeTermino</a></div><div class="ttdeci">void AniadeTermino(Termino t)</div><div class="ttdoc">Modificador que añade un nuevo Termino al Diccionario.</div><div class="ttdef"><b>Definition:</b> Diccionario.cpp:39</div></div>
+<div class="ttc" id="classDiccionario_html_aa0a2191ec706b256c35b5229cc197b15"><div class="ttname"><a href="classDiccionario.html#aa0a2191ec706b256c35b5229cc197b15">Diccionario::Diccionario</a></div><div class="ttdeci">Diccionario()</div><div class="ttdoc">Constructor por defecto.</div><div class="ttdef"><b>Definition:</b> Diccionario.cpp:7</div></div>
+<div class="ttc" id="classDiccionario_html_a516b789839a40eb659c4e12c3e0c2b14"><div class="ttname"><a href="classDiccionario.html#a516b789839a40eb659c4e12c3e0c2b14">Diccionario::operator&lt;&lt;</a></div><div class="ttdeci">friend ostream &amp; operator&lt;&lt;(ostream &amp;out, Diccionario &amp;d)</div><div class="ttdoc">Operador de inserción de flujo. Imprime un diccionario.</div><div class="ttdef"><b>Definition:</b> Diccionario.cpp:75</div></div>
+<div class="ttc" id="classDiccionario_html_abbd34340d309f6217e52d647b3d40b1c"><div class="ttname"><a href="classDiccionario.html#abbd34340d309f6217e52d647b3d40b1c">Diccionario::RecuentoDefiniciones</a></div><div class="ttdeci">void RecuentoDefiniciones(int &amp;total_definiciones, int &amp;max_defs_palabra, float &amp;promedio_defs)</div><div class="ttdoc">Hace diversos cálculos que tienen que ver con las definiciones de los términos del Diccionario.</div><div class="ttdef"><b>Definition:</b> Diccionario.cpp:127</div></div>
+<div class="ttc" id="classTermino_html"><div class="ttname"><a href="classTermino.html">Termino</a></div><div class="ttdoc">Una instancia t del TDA Termino es un objeto compuesto por una palabra de tipo string y un vector din...</div><div class="ttdef"><b>Definition:</b> Termino.h:22</div></div>
+<div class="ttc" id="classLista_html"><div class="ttname"><a href="classLista.html">Lista&lt; Termino &gt;</a></div></div>
+<div class="ttc" id="classDiccionario_html_a52ee9ad6a4b58befe9c3603e405cb360"><div class="ttname"><a href="classDiccionario.html#a52ee9ad6a4b58befe9c3603e405cb360">Diccionario::GetNumeroTerminos</a></div><div class="ttdeci">int GetNumeroTerminos() const</div><div class="ttdoc">Consultor del número de términos del Diccionario.</div><div class="ttdef"><b>Definition:</b> Diccionario.cpp:35</div></div>
+<div class="ttc" id="Vector__Dinamico_8h_html"><div class="ttname"><a href="Vector__Dinamico_8h.html">Vector_Dinamico.h</a></div><div class="ttdoc">Fichero cabecera del TDA Vector_Dinamico.</div></div>
+<div class="ttc" id="classDiccionario_html_a005029e0a1e8b28dcb504e524d25d57e"><div class="ttname"><a href="classDiccionario.html#a005029e0a1e8b28dcb504e524d25d57e">Diccionario::GetDefiniciones</a></div><div class="ttdeci">Vector_Dinamico&lt; string &gt; GetDefiniciones(Termino t) const</div><div class="ttdoc">Consultor de las definiciones de un término.</div><div class="ttdef"><b>Definition:</b> Diccionario.cpp:27</div></div>
+<div class="ttc" id="Lista_8h_html"><div class="ttname"><a href="Lista_8h.html">Lista.h</a></div><div class="ttdoc">Fichero cabecera del TDA Lista.</div></div>
+<div class="ttc" id="classDiccionario_html_acf72932a86e98d33aef771dde204a44d"><div class="ttname"><a href="classDiccionario.html#acf72932a86e98d33aef771dde204a44d">Diccionario::operator&gt;&gt;</a></div><div class="ttdeci">friend istream &amp; operator&gt;&gt;(istream &amp;in, Diccionario &amp;d)</div><div class="ttdoc">Operador de extracción de flujo. Lee un diccionario.</div><div class="ttdef"><b>Definition:</b> Diccionario.cpp:65</div></div>
+<div class="ttc" id="classDiccionario_html_aa3c1919f74aab0483e3a484f0a708e07"><div class="ttname"><a href="classDiccionario.html#aa3c1919f74aab0483e3a484f0a708e07">Diccionario::operator=</a></div><div class="ttdeci">Diccionario &amp; operator=(const Diccionario &amp;d)</div><div class="ttdoc">Operador de asignación.</div><div class="ttdef"><b>Definition:</b> Diccionario.cpp:19</div></div>
+<div class="ttc" id="Termino_8h_html"><div class="ttname"><a href="Termino_8h.html">Termino.h</a></div><div class="ttdoc">Fichero cabecera del TDA Termino.</div></div>
+<div class="ttc" id="classDiccionario_html"><div class="ttname"><a href="classDiccionario.html">Diccionario</a></div><div class="ttdoc">Una instancia d del TDA Diccionario es un objeto que consta de una lista de objetos de la clase Termi...</div><div class="ttdef"><b>Definition:</b> Diccionario.h:20</div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Generado por &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.15
+</small></address>
+</body>
+</html>
